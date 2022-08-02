@@ -37,12 +37,4 @@ public class login extends AppCompatActivity {
                 startActivity(intent);
         }
 
-        //button to direct to signup page(testing)
-//        TextView tv=(TextView)findViewById(R.id.signuphere);
-//            tv.setOnClickListener(new OnClickListener() {
-//                public void onClick(View v) {
-//                    Intent intent = new Intent(this, signup.class);
-//                    startActivity(intent);
-//                }
-//            });
     }
