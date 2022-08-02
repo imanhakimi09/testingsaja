@@ -18,7 +18,6 @@ public class login extends AppCompatActivity {
 
         TextView email = (TextView) findViewById(R.id.email);
         TextView password = (TextView) findViewById(R.id.password);
-
         Button loginbtn = (Button) findViewById(R.id.loginbtn);
 
         //login function
@@ -29,12 +28,21 @@ public class login extends AppCompatActivity {
                     {  openHomepage(); } //direct to homepage
                 }else
                     Toast.makeText( login.this, "Login failed", Toast.LENGTH_SHORT).show(); //shows error message
-            }
+                }
             });
         }
-        //function to direct to another page
-        public void openHomepage() {
-            Intent intent = new Intent(this, homepage.class);
-            startActivity(intent);
+        //function to direct to homepage
+            public void openHomepage() {
+                Intent intent = new Intent(this, homepage.class);
+                startActivity(intent);
         }
+
+        //button to direct to signup page(testing)
+//        TextView tv=(TextView)findViewById(R.id.signuphere);
+//            tv.setOnClickListener(new OnClickListener() {
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(this, signup.class);
+//                    startActivity(intent);
+//                }
+//            });
     }

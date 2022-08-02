@@ -81,6 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/signuphere"
+        android:clickable="true"
         android:layout_below="@+id/signpin"
         android:layout_margin="20dp"
         android:text="Don't have any account? Sign up here"
