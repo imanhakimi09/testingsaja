@@ -8,39 +8,32 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class homepage extends AppCompatActivity {
+public class planpage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homepage);
+        setContentView(R.layout.activity_planpage);
 
-        //direct to homepage button function
+        //direct to homepage function
         ImageButton directHome = (ImageButton)findViewById(R.id.directHome);
         directHome.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText( homepage.this, "This is Homepage", Toast.LENGTH_SHORT).show();
+                {  openHomepage(); }
             }
         });
-        //direct to gympage button function
+        //direct to gympage function
         ImageButton directGym = (ImageButton)findViewById(R.id.directGym);
         directGym.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 {  openGympage(); }
             }
         });
-        //direct to QR page button function
-        ImageButton directQR = (ImageButton)findViewById(R.id.directQR);
-        directQR.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText( homepage.this, "Go to QRpage", Toast.LENGTH_SHORT).show();
-            }
-        });
         //direct to plan page button function
         ImageButton directPlan = (ImageButton)findViewById(R.id.directPlan);
         directPlan.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                {  openPlanpage(); }
+                Toast.makeText( planpage.this, "This is Plan page", Toast.LENGTH_SHORT).show();
             }
         });
         //direct to shop page button function
