@@ -70,9 +70,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signpin"
+        android:id="@+id/directSignup"
         android:layout_below="@id/loginbtn"
-        android:text="Sign In with Pin"
+        android:text="Sign Up"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         android:padding="20dp" />
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/signuphere"
         android:clickable="true"
-        android:layout_below="@+id/signpin"
+        android:layout_below="@+id/directSignup"
         android:layout_margin="20dp"
         android:text="Don't have any account? Sign up here"
         android:textColor="@color/teal_700"
