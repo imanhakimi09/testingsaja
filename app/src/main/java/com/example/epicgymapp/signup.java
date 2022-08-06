@@ -23,17 +23,18 @@ public class signup extends AppCompatActivity {
 
         Button signupbtn = (Button) findViewById(R.id.signupbtn);
 
-
         signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("iman")
-                        && email.getText().toString().equals("iman.com")
-                        && phone.getText().toString().equals("1234")
-                        && password.getText().toString().equals("iman123")){
-                    {  openHomepage(); }
-                }else{
+                String usernameTxt = username.getText().toString();
+                String emailTxt = email.getText().toString();
+                String phoneTxt = phone.getText().toString();
+                String passwordTxt = password.getText().toString();
+
+                if(usernameTxt.isEmpty() || emailTxt.isEmpty() || phoneTxt.isEmpty() || passwordTxt.isEmpty()){
                     Toast.makeText( signup.this, "Incomplete form", Toast.LENGTH_SHORT).show(); //shows error message
+                }else{
+                    {  openHomepage(); }
                 }
             }
         });
@@ -44,4 +45,5 @@ public class signup extends AppCompatActivity {
         Intent intent = new Intent(this, homepage.class);
         startActivity(intent);
     }
+
 }
