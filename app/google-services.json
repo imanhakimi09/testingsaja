@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "696930810710",
+    "firebase_url": "https://epicgym-a2154-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "epicgym-a2154",
+    "storage_bucket": "epicgym-a2154.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696930810710:android:bad557de3588a698b6b4f7",
+        "android_client_info": {
+          "package_name": "com.example.epicgymapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696930810710-76jhkqna0j0mign13gsi57otj4775jav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTdubohNsyNRW1PrxOyJ1CEfRlyOlhaRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696930810710-76jhkqna0j0mign13gsi57otj4775jav.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
