@@ -93,9 +93,9 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/signupbtn"
+        android:id="@+id/firebase_btn"
         android:layout_below="@id/checkboxPolicy"
-        android:text="Sign up"
+        android:text="Sign Up"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
         android:padding="20dp" />
@@ -107,6 +107,6 @@
         android:id="@+id/siginlink"
         android:text="Have an account? Sign in here"
         android:textColor="@color/white"
-        android:layout_below="@id/signupbtn"/>
+        android:layout_below="@id/firebase_btn"/>
 
 </RelativeLayout>

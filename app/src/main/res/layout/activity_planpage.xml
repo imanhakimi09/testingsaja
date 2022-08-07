@@ -38,6 +38,44 @@
         android:layout_marginLeft="40dp"
         android:text="Welcome!" />
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/typePlanHere"
+        android:background="#30ffffff"
+        android:layout_above="@+id/addNewPlan"
+        android:hint="Enter new plan"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/typePlanHereB"
+        android:background="#30ffffff"
+        android:layout_below="@+id/addNewPlan"
+        android:hint="Enter new plan"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addNewPlan"
+        android:text="New Plan"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:padding="20dp" />
+
     //this will be the button to navigate to each page
     <LinearLayout
         android:layout_width="match_parent"
