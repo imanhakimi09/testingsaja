@@ -1,5 +1,7 @@
 package com.example.epicgymapp;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,39 +10,33 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.HashMap;
 
 public class planpage extends AppCompatActivity {
-    private DatabaseReference mDatabase;
-    private Button addPlan;
-    private EditText typePlanner;
-    private EditText typePlannerB;
+    private ImageButton GoWorkoutBtn;
+    private ImageButton GoMealPlan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_planpage);
-        mDatabase = FirebaseDatabase.getInstance().getReference();
-        addPlan = (Button) findViewById(R.id.addNewPlan);
-        typePlanner = (EditText) findViewById(R.id.typePlanHere);
-        typePlannerB = (EditText) findViewById(R.id.typePlanHereB);
+        GoWorkoutBtn = (ImageButton) findViewById(R.id.workoutBtn);
+        GoMealPlan = (ImageButton) findViewById(R.id.mealBtn);
 
-        addPlan.setOnClickListener(new View.OnClickListener() {
+        GoWorkoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String planner = typePlanner.getText().toString().trim();
-                String plannerB = typePlannerB.getText().toString().trim();
+                {openWorkoutPlanner();}
+            }
+        });
 
-                HashMap<String, String > dataMap = new HashMap<String, String>();
-                dataMap.put("Plan A", planner);
-                dataMap.put("Plan B", plannerB);
-
-                mDatabase.push().setValue(dataMap);
+        GoMealPlan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                {openWorkoutPlanner();}
             }
         });
 
@@ -72,6 +68,11 @@ public class planpage extends AppCompatActivity {
                 {  openshoppage(); }
             }
         });
+    }
+    //direct to workout planner
+    public void openWorkoutPlanner(){
+        Intent intent = new Intent(this, workoutPlanner.class);
+        startActivity(intent);
     }
 
     //direct to homepage

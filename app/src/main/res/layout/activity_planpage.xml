@@ -38,43 +38,34 @@
         android:layout_marginLeft="40dp"
         android:text="Welcome!" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/typePlanHere"
-        android:background="#30ffffff"
-        android:layout_above="@+id/addNewPlan"
-        android:hint="Enter new plan"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_margin="10dp"
-        android:padding="20dp"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:drawablePadding="20dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/typePlanHereB"
-        android:background="#30ffffff"
-        android:layout_below="@+id/addNewPlan"
-        android:hint="Enter new plan"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_margin="10dp"
-        android:padding="20dp"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:drawablePadding="20dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/addNewPlan"
-        android:text="New Plan"
+    <ImageButton
+        android:id="@+id/workoutBtn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="10dp"
-        android:padding="20dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:background="@drawable/wrkoutplan" />
+
+    <ImageButton
+        android:id="@+id/mealBtn"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/workoutBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:background="@drawable/eatplan" />
 
     //this will be the button to navigate to each page
     <LinearLayout
@@ -85,43 +76,38 @@
 
         <ImageButton
             android:id="@+id/directHome"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="15dp"
-            android:src="@drawable/ic_baseline_home_24"
-            android:background="@null"/>
+            android:background="@drawable/ic_baseline_home_24" />
 
         <ImageButton
             android:id="@+id/directGym"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="15dp"
-            android:src="@drawable/ic_baseline_run_circle_24"
-            android:background="@null"/>
+            android:background="@drawable/ic_baseline_run_circle_24" />
 
         <ImageButton
             android:id="@+id/directQR"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_margin="20dp"
-            android:src="@drawable/ic_baseline_add_circle_24"
-            android:background="@null"/>
+            android:background="@drawable/ic_baseline_add_circle_24" />
 
         <ImageButton
             android:id="@+id/directPlan"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="15dp"
-            android:src="@drawable/ic_baseline_menu_book_24"
-            android:background="@null"/>
+            android:background="@drawable/ic_baseline_menu_book_24" />
 
         <ImageButton
             android:id="@+id/directShop"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="15dp"
-            android:src="@drawable/ic_outline_shopping_cart_24"
-            android:background="@null"/>
+            android:background="@drawable/ic_outline_shopping_cart_24" />
 
     </LinearLayout>
 
