@@ -33,6 +33,7 @@ public class homepage extends AppCompatActivity {
         ImageButton directQR = (ImageButton)findViewById(R.id.directQR);
         directQR.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                {  openUserProfile(); }
                 Toast.makeText( homepage.this, "Go to QRpage", Toast.LENGTH_SHORT).show();
             }
         });
@@ -61,10 +62,17 @@ public class homepage extends AppCompatActivity {
         Intent intent = new Intent(this, gympage.class);
         startActivity(intent);
     }
+    //direct to userprofile
+    public void openUserProfile(){
+        Intent intent = new Intent(this, userprofile.class);
+        startActivity(intent);
+    }
+    //direct to planner
     public void openPlanpage(){
         Intent intent = new Intent(this, planpage.class);
         startActivity(intent);
     }
+    //direct to shopping
     public void openshoppage(){
         Intent intent = new Intent(this, shoppage.class);
         startActivity(intent);

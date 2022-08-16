@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage"
+    tools:context=".homepage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewProfile"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="User Profile"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewUsername"
+        android:layout_below="@+id/viewProfile"
+        android:layout_centerHorizontal="true"
+        android:text="Username:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewEmail"
+        android:layout_below="@id/viewUsername"
+        android:layout_centerHorizontal="true"
+        android:text="Email:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPhone"
+        android:layout_below="@id/viewEmail"
+        android:layout_centerHorizontal="true"
+        android:text="Phone:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPassword"
+        android:layout_below="@id/viewPhone"
+        android:layout_centerHorizontal="true"
+        android:text="Password:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"/>
+
+    //this will be the button to navigate to each page
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/directHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/directGym"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_baseline_run_circle_24" />
+
+        <ImageButton
+            android:id="@+id/directQR"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_baseline_add_circle_24" />
+
+        <ImageButton
+            android:id="@+id/directPlan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_baseline_menu_book_24" />
+
+        <ImageButton
+            android:id="@+id/directShop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_outline_shopping_cart_24" />
+
+    </LinearLayout>
+
+</RelativeLayout>
