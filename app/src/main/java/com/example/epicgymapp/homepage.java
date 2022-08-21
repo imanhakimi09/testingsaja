@@ -51,7 +51,10 @@ public class homepage extends AppCompatActivity {
                 {  openshoppage(); }
             }
         });
+
+
     }
+
     //direct to homepage
     public void openHomepage(){
         Intent intent = new Intent(this, homepage.class);

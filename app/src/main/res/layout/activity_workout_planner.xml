@@ -70,13 +70,16 @@
         android:text="Add Plan" />
 
     <ListView
+        android:id="@+id/viewOutput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/viewOutput"
-        android:background="#30ffffff"
         android:layout_below="@+id/addWorkoutBtn"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"
-        android:padding="20dp" />
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:padding="20dp"
+        android:textColor="@color/white" />
 
 </RelativeLayout>
