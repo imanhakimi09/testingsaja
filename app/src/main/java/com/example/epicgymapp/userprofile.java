@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +22,8 @@ public class userprofile extends AppCompatActivity {
 private FirebaseUser user;
 private DatabaseReference reference;
 private String userId;
+private Button updatebtn;
+//String _name, _email, _phone, _password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +34,11 @@ private String userId;
         reference = FirebaseDatabase.getInstance().getReference("New Users");
         userId = user.getUid();
 
-        final TextView displayName = (TextView) findViewById(R.id.viewUsername);
-        final TextView displayEmail = (TextView) findViewById(R.id.viewEmail);
-        final TextView displayPhone = (TextView) findViewById(R.id.viewPhone);
-        final TextView displayPassword = (TextView) findViewById(R.id.viewPassword);
+        final EditText displayName = (EditText) findViewById(R.id.viewUsername);
+        final EditText displayEmail = (EditText) findViewById(R.id.viewEmail);
+        final EditText displayPhone = (EditText) findViewById(R.id.viewPhone);
+        final EditText displayPassword = (EditText) findViewById(R.id.viewPassword);
+        updatebtn = (Button) findViewById(R.id.updateProfile);
 
         reference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -57,5 +63,33 @@ private String userId;
                 Toast.makeText(userprofile.this, "Failed to retrieve data!", Toast.LENGTH_LONG).show();
             }
         });
+
+         updatebtn.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                    Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show();
+//                    if(updateName() || updateEmail()){
+//                        Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show();
+//                    }
+             }
+         });
     }
+
+//    private boolean updateEmail() {
+//        if(!_name.equals(displayName.getEditText().getText().toString())){
+//            reference.child(name).child("name").setValue(displayName.getEditText().getText().toString());
+//            return true;
+//        }else{
+//            return false;
+//        }
+//    }
+//
+//    private boolean updateName() {
+//        if(!_email.equals(displayEmail.getEditText().getText().toString())){
+//            reference.child(email).child("email").setValue(displayEmail.getEditText().getText().toString());
+//            return true;
+//        }else{
+//            return false;
+//        }
+//    }
 }

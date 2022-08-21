@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">EpicGymApp</string>
     <string name="start">Start</string>
+    <string-array name="workoutType">
+        <item>Chest</item>
+        <item>Back</item>
+        <item>Bicep</item>
+        <item>Tricep</item>
+        <item>Legs</item>
+    </string-array>
+    <string-array name="dietType">
+        <item>Carbs</item>
+        <item>Protein</item>
+        <item>Fats</item>
+    </string-array>
 </resources>

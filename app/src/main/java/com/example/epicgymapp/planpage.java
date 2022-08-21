@@ -36,7 +36,7 @@ public class planpage extends AppCompatActivity {
         GoMealPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                {openWorkoutPlanner();}
+                {openMealPlanner();}
             }
         });
 
@@ -72,6 +72,11 @@ public class planpage extends AppCompatActivity {
     //direct to workout planner
     public void openWorkoutPlanner(){
         Intent intent = new Intent(this, workoutPlanner.class);
+        startActivity(intent);
+    }
+    //direct to meal planner
+    public void openMealPlanner(){
+        Intent intent = new Intent(this, diet_planner.class);
         startActivity(intent);
     }
 
