@@ -9,7 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class diet_planner extends AppCompatActivity{
+public class diet_planner extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 private Spinner spinner;
 
     @Override
@@ -22,6 +22,16 @@ private Spinner spinner;
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, dietPlan);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
-
     }
+        @Override
+        public void onItemSelected(AdapterView<?> parent, View view, int position, long id){
+            if(parent.getId() == R.id.spinner1){
+                String valueFromSpinner = parent.getItemAtPosition(position).toString();
+            }
+        }
+
+        @Override
+        public void onNothingSelected(AdapterView<?> parent){
+
+        }
 }

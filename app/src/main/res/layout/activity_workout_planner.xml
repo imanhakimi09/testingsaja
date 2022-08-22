@@ -39,7 +39,7 @@
         android:text="Welcome!" />
 
     <EditText
-        android:id="@+id/workoutPlan"
+        android:id="@+id/workout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
@@ -55,12 +55,30 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/workoutMenu"
+        android:layout_below="@+id/workout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Workout"
+        android:padding="20dp"
+        android:layout_margin="10dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdownItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/addWorkoutBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/workoutPlan"
+        android:layout_below="@id/workoutMenu"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
@@ -69,10 +87,10 @@
         android:padding="20dp"
         android:text="Add Plan" />
 
-    <ListView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/viewOutput"
+        android:id="@+id/selectedItem"
         android:background="#30ffffff"
         android:layout_below="@+id/addWorkoutBtn"
         android:textColor="@color/white"
