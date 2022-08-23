@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class signup extends AppCompatActivity {
     private EditText addEmail;
     private EditText addPhone;
     private EditText addPassword;
+    private CheckBox checkbox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class signup extends AppCompatActivity {
         addEmail = (EditText) findViewById(R.id.email);
         addPhone = (EditText) findViewById(R.id.phone);
         addPassword = (EditText) findViewById(R.id.password);
+        checkbox = (CheckBox) findViewById(R.id.checkboxPolicy);
         createNewUser = (Button) findViewById(R.id.firebase_btn);
 
         //firebase button
@@ -80,6 +83,11 @@ public class signup extends AppCompatActivity {
                 if(password.length() < 6){
                     addPassword.setError("Password length must be more than 6 characters");
                     addPassword.requestFocus();
+                    return;
+                }
+                if(!checkbox.isChecked()){
+                    checkbox.setError("Please agree to the terms and policy");
+                    checkbox.requestFocus();
                     return;
                 }
 

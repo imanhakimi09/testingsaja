@@ -51,10 +51,10 @@ private Button updatebtn;
                     String phone = userProfile.phone;
                     String password = userProfile.password;
 
-                    displayName.setText(name);
-                    displayEmail.setText(email);
-                    displayPhone.setText(phone);
-                    displayPassword.setText(password);
+                    displayName.setText("Username: " + name);
+                    displayEmail.setText("Email: " + email);
+                    displayPhone.setText("Phone Number: " + phone);
+                    displayPassword.setText("Password: " + password);
                 }
             }
 
@@ -63,30 +63,30 @@ private Button updatebtn;
                 Toast.makeText(userprofile.this, "Failed to retrieve data!", Toast.LENGTH_LONG).show();
             }
         });
-
+        //update profile button
          updatebtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
                     Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show();
 //                    if(updateName() || updateEmail()){
-//                        Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show(); //show msg if profile updated
 //                    }
              }
          });
     }
-
-//    private boolean updateEmail() {
+//    //update name function
+//    private boolean updateName() {
 //        if(!_name.equals(displayName.getEditText().getText().toString())){
-//            reference.child(name).child("name").setValue(displayName.getEditText().getText().toString());
+//            reference.child(_name).child("name").setValue(displayName.getEditText().getText().toString());
 //            return true;
 //        }else{
 //            return false;
 //        }
 //    }
-//
-//    private boolean updateName() {
+//    //update email function
+//    private boolean updateEmail() {
 //        if(!_email.equals(displayEmail.getEditText().getText().toString())){
-//            reference.child(email).child("email").setValue(displayEmail.getEditText().getText().toString());
+//            reference.child(_email).child("email").setValue(displayEmail.getEditText().getText().toString());
 //            return true;
 //        }else{
 //            return false;
