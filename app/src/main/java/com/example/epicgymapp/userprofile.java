@@ -1,8 +1,10 @@
 package com.example.epicgymapp;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,7 +25,7 @@ private FirebaseUser user;
 private DatabaseReference reference;
 private String userId;
 private Button updatebtn;
-//String _name, _email, _phone, _password;
+String _name, _email, _phone, _password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,17 +69,36 @@ private Button updatebtn;
          updatebtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
-                    Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show();
-//                    if(updateName() || updateEmail()){
-//                        Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show(); //show msg if profile updated
+//                 Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show();
+//                 if(updateName() || updateEmail()){
+//                     Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show(); //show msg if profile updated
 //                    }
+                 //alert user before updating
+                 AlertDialog.Builder builder = new AlertDialog.Builder(userprofile.this);
+                 builder.setTitle("Update profile");
+                 builder.setMessage("Proceed with update profile?");
+                 builder.setCancelable(false);
+                 builder.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(DialogInterface dialogInterface, int i) {
+                         Toast.makeText(userprofile.this, "Profile has been updated", Toast.LENGTH_LONG).show();
+                     }
+                 });
+                 builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                     @Override
+                     public void onClick(DialogInterface dialogInterface, int i) {
+                         Toast.makeText(userprofile.this, "Cancel update", Toast.LENGTH_LONG).show();
+                     }
+                 });
+                 AlertDialog dialog = builder.create();
+                 dialog.show();
              }
          });
     }
-//    //update name function
+    //update name function
 //    private boolean updateName() {
-//        if(!_name.equals(displayName.getEditText().getText().toString())){
-//            reference.child(_name).child("name").setValue(displayName.getEditText().getText().toString());
+//        if(!_name.equals(name.getEditText().getText().toString())){
+//            reference.child(_name).child("name").setValue(name.getEditText().getText().toString());
 //            return true;
 //        }else{
 //            return false;
