@@ -91,7 +91,6 @@
 
     //this will be the button to navigate to each page
     <LinearLayout
-        android:layout_below="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
