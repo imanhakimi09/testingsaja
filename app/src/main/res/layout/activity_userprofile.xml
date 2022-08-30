@@ -24,7 +24,7 @@
         android:id="@+id/viewUsername"
         android:layout_below="@+id/viewProfile"
         android:layout_centerHorizontal="true"
-        android:text="Username:"
+        android:hint="Username"
         android:textStyle="bold"
         android:textSize="20dp"
         android:layout_margin="10dp"
@@ -36,7 +36,7 @@
         android:id="@+id/viewEmail"
         android:layout_below="@id/viewUsername"
         android:layout_centerHorizontal="true"
-        android:text="Email:"
+        android:hint="Email"
         android:textStyle="bold"
         android:textSize="20dp"
         android:layout_margin="10dp"
@@ -48,7 +48,7 @@
         android:id="@+id/viewPhone"
         android:layout_below="@id/viewEmail"
         android:layout_centerHorizontal="true"
-        android:text="Phone:"
+        android:hint="Phone"
         android:textStyle="bold"
         android:textSize="20dp"
         android:layout_margin="10dp"
@@ -60,7 +60,7 @@
         android:id="@+id/viewPassword"
         android:layout_below="@id/viewPhone"
         android:layout_centerHorizontal="true"
-        android:text="Password:"
+        android:hint="Password"
         android:textStyle="bold"
         android:textSize="20dp"
         android:layout_margin="10dp"
@@ -77,9 +77,21 @@
         android:textSize="20dp"
         android:layout_margin="10dp"
         android:padding="20dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_below="@id/updateProfile"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:padding="20dp" />
 
     //this will be the button to navigate to each page
     <LinearLayout
+        android:layout_below="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

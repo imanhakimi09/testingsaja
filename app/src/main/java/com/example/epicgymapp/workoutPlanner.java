@@ -74,6 +74,7 @@ TextView textView;
                 dataMap.put("Reps", reps);
 
                 reference.push().setValue(dataMap);
+                Toast.makeText(workoutPlanner.this, "New Workout plan added", Toast.LENGTH_SHORT).show();
             }
         });
         //reps button
@@ -102,20 +103,4 @@ TextView textView;
             }
         });
     }
-
-//    public void increment(View view){
-//        count++;
-//        repsValue.setText("" + count);
-//        if(count == 30){
-//            Toast.makeText(this, "The maximum reps is 30", Toast.LENGTH_SHORT).show();
-//            return;
-//        }
-//    }
-//    public void decrement(View view){
-//        if(count <= 5){
-//            Toast.makeText(this, "Reps must be more than 5", Toast.LENGTH_SHORT).show();
-//            return;
-//        }else count--;
-//        repsValue.setText("" + count);
-//    }
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,7 @@ public class userprofile extends AppCompatActivity {
 private FirebaseUser user;
 private DatabaseReference reference;
 private String userId;
-private Button updatebtn;
+private Button updatebtn, logoutBtn;
 String _name, _email, _phone, _password;
 
     @Override
@@ -41,12 +42,42 @@ String _name, _email, _phone, _password;
         final EditText displayPhone = (EditText) findViewById(R.id.viewPhone);
         final EditText displayPassword = (EditText) findViewById(R.id.viewPassword);
         updatebtn = (Button) findViewById(R.id.updateProfile);
+        logoutBtn = (Button) findViewById(R.id.logout);
+
+        //logout function
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //alert user before logout
+                AlertDialog.Builder builder = new AlertDialog.Builder(userprofile.this);
+                builder.setTitle("Logout");
+                builder.setMessage("Confirm?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //logout user
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent(userprofile.this, login.class));
+                    }
+                });
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //cancel logout
+                        Toast.makeText(userprofile.this, "Cancel Logout", Toast.LENGTH_LONG).show();
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
 
         reference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 User userProfile = snapshot.getValue(User.class);
-
+                //retrieve and display user profile
                 if(userProfile != null){
                     String name = userProfile.name;
                     String email = userProfile.email;
@@ -69,7 +100,6 @@ String _name, _email, _phone, _password;
          updatebtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
-//                 Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show();
 //                 if(updateName() || updateEmail()){
 //                     Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show(); //show msg if profile updated
 //                    }
