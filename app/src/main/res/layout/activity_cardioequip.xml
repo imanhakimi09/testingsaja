@@ -14,16 +14,20 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:gravity="center"
-        android:text="Gym Equipments and Facilities"
+        android:text="Cardio Equipments"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold" />
 
+    <Space
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="720dp"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,30 +38,23 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="30dp"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:text="Cardio Equipments"
+                android:text="1. Treadmill"
                 android:textColor="@color/white"
-                />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/cardio"
+                android:id="@+id/treadmill"
                 android:layout_width="350dp"
                 android:layout_height="236dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginEnd="35dp"
-                android:scaleType="fitXY"
                 android:gravity="center"
-                app:srcCompat="@drawable/cardio" />
-
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
-
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/treadmill" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -65,20 +62,46 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="Chest Equipments"
+                android:text="A device generally used for walking, running, or climbing while staying in the same place."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:text="2. Bike Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/chest"
+                android:id="@+id/bike"
                 android:layout_width="350dp"
                 android:layout_height="236dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginEnd="35dp"
-                android:scaleType="fitXY"
                 android:gravity="center"
-                app:srcCompat="@drawable/chest1" />
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bike" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="A device used as exercise equipment for indoor cycling."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="1dp"
@@ -87,50 +110,34 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="30dp"
-                android:gravity="center"
-                android:text="Back Equipments"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <ImageButton
-                android:id="@+id/back"
-                android:layout_width="350dp"
-                android:layout_height="240dp"
                 android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:scaleType="fitXY"
-                android:gravity="center"
-                app:srcCompat="@drawable/back1" />
-
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
-                android:text="Legs equipments"
+                android:text="3. Rowing Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/legs"
+                android:id="@+id/rower"
                 android:layout_width="350dp"
                 android:layout_height="236dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginEnd="35dp"
-                android:scaleType="fitXY"
                 android:gravity="center"
-                app:srcCompat="@drawable/legs1" />
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/rower" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="A machine used to simulate the action of watercraft rowing for the purpose of exercise or training for rowing."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="1dp"
@@ -139,28 +146,38 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
-                android:text="Arms equipments"
+                android:text="4. Stairs Climber"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/arms"
+                android:id="@+id/stairs"
                 android:layout_width="350dp"
-                android:layout_height="237dp"
+                android:layout_height="236dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginEnd="35dp"
-                android:scaleType="fitXY"
                 android:gravity="center"
-                app:srcCompat="@drawable/arm1" />
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/stairs" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="A machine that simulates the experience of walking (or running) up a flight of stairs to provide a challenging, low impact workout."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="1dp"
-                android:layout_height="20dp" />
+                android:layout_height="90dp" />
 
 
         </LinearLayout>

@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/FYP/app/src/main/res/layout/activity_diet_planner.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_forgotpassword.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_gympage.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_homepage.xml" value="0.2" />
@@ -19,8 +18,16 @@
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.2585" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2585" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2585" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_armsequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_backequip.xml" value="0.25" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_cardioequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_chestequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_equipments.xml" value="0.22" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_gympage.xml" value="0.25" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_homepage.xml" value="0.1359375" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_legequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_planpage.xml" value="0.258230012825994" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_shoppage.xml" value="0.258230012825994" />
       </map>
     </option>
   </component>

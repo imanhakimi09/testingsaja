@@ -63,6 +63,10 @@
                 android:gravity="center"
                 app:srcCompat="@drawable/chest1" />
 
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -104,6 +108,10 @@
                 android:gravity="center"
                 app:srcCompat="@drawable/legs1" />
 
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,6 +131,10 @@
                 android:gravity="center"
                 app:srcCompat="@drawable/arm1" />
 
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -133,6 +145,10 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
+
             <ImageButton
                 android:id="@+id/machine"
                 android:layout_width="350dp"
@@ -142,6 +158,10 @@
                 android:scaleType="fitXY"
                 android:gravity="center"
                 app:srcCompat="@drawable/machines" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
