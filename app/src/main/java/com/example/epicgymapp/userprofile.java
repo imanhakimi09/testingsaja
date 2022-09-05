@@ -37,10 +37,10 @@ String _name, _email, _phone, _password;
         reference = FirebaseDatabase.getInstance().getReference("New Users");
         userId = user.getUid();
 
-        final EditText displayName = (EditText) findViewById(R.id.viewUsername);
-        final EditText displayEmail = (EditText) findViewById(R.id.viewEmail);
-        final EditText displayPhone = (EditText) findViewById(R.id.viewPhone);
-        final EditText displayPassword = (EditText) findViewById(R.id.viewPassword);
+         EditText displayName = (EditText) findViewById(R.id.viewUsername);
+         EditText displayEmail = (EditText) findViewById(R.id.viewEmail);
+         EditText displayPhone = (EditText) findViewById(R.id.viewPhone);
+         EditText displayPassword = (EditText) findViewById(R.id.viewPassword);
         updatebtn = (Button) findViewById(R.id.updateProfile);
         logoutBtn = (Button) findViewById(R.id.logout);
 
@@ -125,10 +125,10 @@ String _name, _email, _phone, _password;
              }
          });
     }
-    //update name function
+//    //update name function
 //    private boolean updateName() {
-//        if(!_name.equals(name.getEditText().getText().toString())){
-//            reference.child(_name).child("name").setValue(name.getEditText().getText().toString());
+//        if(!_name.equals(displayName.getEditText().getText().toString())){
+//            reference.child(_name).child("name").setValue(displayName.getEditText().getText().toString());
 //            return true;
 //        }else{
 //            return false;

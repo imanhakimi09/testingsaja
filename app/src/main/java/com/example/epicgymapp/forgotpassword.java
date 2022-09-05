@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -22,7 +23,7 @@ private TextView backLogin;
 private Button resetpassword;
 private EditText takeUsername;
 private EditText takeEmail;
-FirebaseAuth auth;
+private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,7 @@ FirebaseAuth auth;
         Button resetpassword = (Button) findViewById(R.id.resetpwd);
         EditText takeUsername = (EditText) findViewById(R.id.username);
         EditText takeEmail = (EditText) findViewById(R.id.email);
-        auth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
 
         //reset password function
         resetpassword.setOnClickListener(new View.OnClickListener() {
@@ -56,8 +57,17 @@ FirebaseAuth auth;
                     takeEmail.requestFocus();
                     return;
                 }
+                mAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText( forgotpassword.this, "Check email to reset password", Toast.LENGTH_SHORT).show();
+                        }else{
+                            Toast.makeText( forgotpassword.this, "Try again", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
                     { resetPwd();}
-                    Toast.makeText( forgotpassword.this, "Password has been reset", Toast.LENGTH_SHORT).show(); //shows error message
             }
         });
 
@@ -77,7 +87,7 @@ FirebaseAuth auth;
         }
         //function to reset password
         public void resetPwd() {
-            Intent intent = new Intent(this, homepage.class);
+            Intent intent = new Intent(this, login.class);
             startActivity(intent);
         }
 }
