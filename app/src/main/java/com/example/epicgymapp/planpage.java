@@ -47,11 +47,11 @@ public class planpage extends AppCompatActivity {
                 {  openHomepage(); }
             }
         });
-        //direct to gympage function
+        //direct to userprofile button function
         ImageButton directGym = (ImageButton)findViewById(R.id.directGym);
         directGym.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                {  openGympage(); }
+                {  openUserProfile(); }
             }
         });
         //direct to plan page button function
@@ -88,6 +88,11 @@ public class planpage extends AppCompatActivity {
     //direct to gympage
     public void openGympage(){
         Intent intent = new Intent(this, gympage.class);
+        startActivity(intent);
+    }
+    //direct to userprofile
+    public void openUserProfile(){
+        Intent intent = new Intent(this, userprofile.class);
         startActivity(intent);
     }
     public void openPlanpage(){

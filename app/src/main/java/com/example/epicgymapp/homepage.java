@@ -22,18 +22,17 @@ public class homepage extends AppCompatActivity {
                 Toast.makeText( homepage.this, "This is Homepage", Toast.LENGTH_SHORT).show();
             }
         });
-        //direct to gympage button function
+        //direct to userprofile button function
         ImageButton directGym = (ImageButton)findViewById(R.id.directGym);
         directGym.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                {  openGympage(); }
+                {  openUserProfile(); }
             }
         });
         //direct to QR page button function
         ImageButton directQR = (ImageButton)findViewById(R.id.directQR);
         directQR.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                {  openUserProfile(); }
                 Toast.makeText( homepage.this, "Go to QRpage", Toast.LENGTH_SHORT).show();
             }
         });
