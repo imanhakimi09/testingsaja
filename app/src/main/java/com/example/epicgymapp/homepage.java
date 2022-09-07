@@ -51,6 +51,15 @@ public class homepage extends AppCompatActivity {
             }
         });
 
+        //direct to equipments and machine page button function
+        ImageButton directEquip = (ImageButton)findViewById(R.id.machine);
+        directEquip.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openequippage(); }
+            }
+        });
+
+
 
     }
 
@@ -77,6 +86,12 @@ public class homepage extends AppCompatActivity {
     //direct to shopping
     public void openshoppage(){
         Intent intent = new Intent(this, shoppage.class);
+        startActivity(intent);
+    }
+
+    //direct to equipments and machines
+    public void openequippage(){
+        Intent intent = new Intent(this, equippage.class);
         startActivity(intent);
     }
 }
