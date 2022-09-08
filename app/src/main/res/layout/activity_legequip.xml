@@ -66,7 +66,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="A device designed to duplicate the dumbbell fly exercise in machine form with comfort, complete safety and control."
+                android:text="The Smith machine squat is a variation of the squat and an exercise used to build the muscles of the legs"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -106,7 +106,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="A device designed to duplicate the dumbbell fly exercise in machine form with comfort, complete safety and control."
+                android:text="A device designed to target the calf muscle of the legs in standing form. "
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -146,7 +146,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="A machine exercise that primarily targets the chest and to a lesser degree also targets the shoulders and triceps"
+                android:text="A device designed to target the calf muscle of the legs in seated form."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -186,7 +186,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="The smith machine bench press is a safe and secure way to progress and allow better control."
+                android:text="A machine that requires to straighten your leg against resistance and thus works the muscles on the front of the leg -- your quadriceps."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -226,7 +226,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="A machine designed to duplicate the reverse dumbbell fly exercise in machine form with comfort, complete safety and control."
+                android:text="The hamstring curl, also called a leg curl, is an exercise that strengthens the hamstrings ( back of the leg )."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
