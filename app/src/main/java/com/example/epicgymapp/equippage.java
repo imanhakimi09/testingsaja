@@ -134,27 +134,27 @@ public class equippage extends AppCompatActivity {
     }
 
     public void openCardioEq(){
-        Intent intent = new Intent(this, shoppage.class);
+        Intent intent = new Intent(this, cardiopage.class);
         startActivity(intent);
     }
 
     public void openChestEq(){
-        Intent intent = new Intent(this, shoppage.class);
+        Intent intent = new Intent(this, chesteqpage.class);
         startActivity(intent);
     }
 
     public void openBackEq(){
-        Intent intent = new Intent(this, shoppage.class);
+        Intent intent = new Intent(this, backeqpage.class);
         startActivity(intent);
     }
 
     public void openLegsEq(){
-        Intent intent = new Intent(this, shoppage.class);
+        Intent intent = new Intent(this, legseqpage.class);
         startActivity(intent);
     }
 
     public void openArmsEq(){
-        Intent intent = new Intent(this, shoppage.class);
+        Intent intent = new Intent(this, armseqpage.class);
         startActivity(intent);
     }
 }
