@@ -72,10 +72,11 @@ private FirebaseAuth mAuth;
                         if(task.isSuccessful()){
                             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
-                            if(task.isSuccessful()){
+                            if(user.isEmailVerified()){
                                 {  openHomepage(); } //direct to homepage
                             }else{
-                                Toast.makeText(login.this, "Failed to login user. Try again!", Toast.LENGTH_LONG).show();
+                                user.sendEmailVerification();
+                                Toast.makeText(login.this, "Check email to verify account", Toast.LENGTH_LONG).show();
                             }
                         }else{
                             Toast.makeText(login.this, "Failed to login user. Try again!", Toast.LENGTH_LONG).show();

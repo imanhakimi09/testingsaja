@@ -60,6 +60,11 @@ public class signup extends AppCompatActivity {
                     addName.requestFocus();
                     return;
                 }
+                if(name.length() < 5){
+                    addName.setError("Username must be more than 5 characters");
+                    addName.requestFocus();
+                    return;
+                }
                 if(email.isEmpty()){
                     addEmail.setError("Email is required");
                     addEmail.requestFocus();
@@ -72,6 +77,11 @@ public class signup extends AppCompatActivity {
                 }
                 if(phone.isEmpty()){
                     addPhone.setError("Phone number is required");
+                    addPhone.requestFocus();
+                    return;
+                }
+                if(phone.length() == 7){
+                    addPhone.setError("Phone number must be 7 digits");
                     addPhone.requestFocus();
                     return;
                 }
