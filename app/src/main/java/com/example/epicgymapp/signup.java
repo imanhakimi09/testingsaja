@@ -80,7 +80,7 @@ public class signup extends AppCompatActivity {
                     addPhone.requestFocus();
                     return;
                 }
-                if(phone.length() == 7){
+                if(phone.length() > 7){
                     addPhone.setError("Phone number must be 7 digits");
                     addPhone.requestFocus();
                     return;
@@ -120,7 +120,7 @@ public class signup extends AppCompatActivity {
                                                 }
                                             }
                                         });
-                                        {  openHomepage(); }
+                                        {  openLogin(); }
                             }else{
                                 Toast.makeText(signup.this, "Failed to create user. Try again!", Toast.LENGTH_LONG).show();
                             }
@@ -132,9 +132,9 @@ public class signup extends AppCompatActivity {
 
     }
 
-    //function to direct to homepage
-    public void openHomepage() {
-        Intent intent = new Intent(this, homepage.class);
+    //function to direct to login page
+    public void openLogin() {
+        Intent intent = new Intent(this, login.class);
         startActivity(intent);
     }
 
