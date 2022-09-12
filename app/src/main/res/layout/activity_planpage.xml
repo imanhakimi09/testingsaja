@@ -58,13 +58,12 @@
         android:layout_height="150dp"
         android:layout_below="@id/workoutBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_margin="30dp"
-        android:padding="20dp"
-        android:background="@drawable/eatplan" />
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/eatplan"
+        android:padding="20dp" />
 
     //this will be the button to navigate to each page
     <LinearLayout

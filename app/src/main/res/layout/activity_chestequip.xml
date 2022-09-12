@@ -106,7 +106,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="A device designed to duplicate the dumbbell fly exercise in machine form with comfort, complete safety and control."
+                android:text="A device designed to duplicate the dumbbell fly exercise in seated machine form with comfort, complete safety and control."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
