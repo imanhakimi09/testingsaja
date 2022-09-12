@@ -27,7 +27,7 @@ public class workoutPlanner extends AppCompatActivity {
 private Button addWorkout, increment, decrement;
 private EditText workout;
 private TextView listView;
-private TextView repsValue;
+private TextView repsValue, setsValue;
 int count = 5;
 private DatabaseReference reference;
 
@@ -69,7 +69,7 @@ TextView textView;
                 String reps = repsValue.getText().toString().trim();
 
                 HashMap<String, String > dataMap = new HashMap<String, String>();
-                dataMap.put("Workout Name", plan);
+                dataMap.put("Workout Plan", plan);
                 dataMap.put("Workout Type", workout);
                 dataMap.put("Reps", reps);
 

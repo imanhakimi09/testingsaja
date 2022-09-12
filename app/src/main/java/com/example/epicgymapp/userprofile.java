@@ -101,8 +101,10 @@ String _name, _email, _phone, _password;
              @Override
              public void onClick(View view) {
 //                 if(updateName() || updateEmail()){
-//                     Toast.makeText(userprofile.this, "Credentials has been updated", Toast.LENGTH_LONG).show(); //show msg if profile updated
-//                    }
+//                     Toast.makeText(userprofile.this, "Profile has been updated", Toast.LENGTH_LONG).show(); //show msg if profile updated
+//                    }else{
+//                     Toast.makeText(userprofile.this, "Profile is still the same", Toast.LENGTH_LONG).show(); //show msg if data still the same
+//                 }
                  //alert user before updating
                  AlertDialog.Builder builder = new AlertDialog.Builder(userprofile.this);
                  builder.setTitle("Update profile");
@@ -129,6 +131,7 @@ String _name, _email, _phone, _password;
 //    private boolean updateName() {
 //        if(!_name.equals(displayName.getEditText().getText().toString())){
 //            reference.child(_name).child("name").setValue(displayName.getEditText().getText().toString());
+//            _name = displayName.getEditText().getText.toString();
 //            return true;
 //        }else{
 //            return false;
@@ -138,6 +141,7 @@ String _name, _email, _phone, _password;
 //    private boolean updateEmail() {
 //        if(!_email.equals(displayEmail.getEditText().getText().toString())){
 //            reference.child(_email).child("email").setValue(displayEmail.getEditText().getText().toString());
+//            _email = displayEmail.getEditText().getText.toString();
 //            return true;
 //        }else{
 //            return false;
