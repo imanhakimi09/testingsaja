@@ -64,12 +64,18 @@ TextView textView;
             @Override
             public void onClick(View view) {
                 String plan = workout.getText().toString().trim();
-                String workout = autoCompleteTextView.getText().toString().trim();
+                String workoutType = autoCompleteTextView.getText().toString().trim();
                 String reps = repsValue.getText().toString().trim();
+
+                if(plan.isEmpty()){
+                    workout.setError("Data cannot be empty");
+                    workout.requestFocus();
+                    return;
+                }
 
                 HashMap<String, String > dataMap = new HashMap<String, String>();
                 dataMap.put("Workout Plan", plan);
-                dataMap.put("Workout Type", workout);
+                dataMap.put("Workout Type", workoutType);
                 dataMap.put("Reps", reps);
 
                 reference.push().setValue(dataMap);
