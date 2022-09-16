@@ -26,7 +26,7 @@ import java.util.HashMap;
 public class workoutPlanner extends AppCompatActivity {
 private Button addWorkout, increment, decrement;
 private EditText workout;
-private TextView listView;
+private TextView newPlan;
 private TextView repsValue, setsValue;
 int count = 5;
 private DatabaseReference reference;
@@ -42,13 +42,12 @@ TextView textView;
         reference = FirebaseDatabase.getInstance().getReference("Plan");
         addWorkout = (Button) findViewById(R.id.addWorkoutBtn);
         workout = (EditText) findViewById(R.id.workout);
-//        listView = (TextView) findViewById(R.id.viewOutput);
         repsValue = (TextView) findViewById(R.id.repsValue);
         increment = (Button) findViewById(R.id.increment);
         decrement = (Button) findViewById(R.id.decrement);
         textInputLayout = findViewById(R.id.workoutMenu);
         autoCompleteTextView = findViewById(R.id.dropdownItems);
-        textView = findViewById(R.id.selectedItem);
+        textView = findViewById(R.id.newPlan);
 
         String [] items = {"Back Workout", "Chest Workout", "Bicep Workout", "Tricep Workout", "Leg Workout"};
         ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(workoutPlanner.this, R.layout.item_list, items);
@@ -75,6 +74,8 @@ TextView textView;
 
                 reference.push().setValue(dataMap);
                 Toast.makeText(workoutPlanner.this, "New Workout plan added", Toast.LENGTH_SHORT).show();
+
+//                getPlan(); //function to retrieve from database
             }
         });
         //reps button
@@ -103,4 +104,23 @@ TextView textView;
             }
         });
     }
+
+//    //retrieve from database
+//    private void getPlan() {
+//        reference.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                String plan = snapshot.getValue().toString();
+//                String workout = snapshot.getValue().toString();
+//                String reps = snapshot.getValue().toString();
+//
+//                newPlan.setText("Workout Plan " + plan);
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//                Toast.makeText(workoutPlanner.this, "Unable to retrieve data", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//    }
 }
