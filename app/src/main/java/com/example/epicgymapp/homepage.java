@@ -84,7 +84,7 @@ public class homepage extends AppCompatActivity {
         ImageButton directQR = (ImageButton)findViewById(R.id.directQR);
         directQR.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText( homepage.this, "Go to QRpage", Toast.LENGTH_SHORT).show();
+                { {  openQRpage(); } }
             }
         });
         //direct to plan page button function
@@ -132,6 +132,11 @@ public class homepage extends AppCompatActivity {
     //direct to planner
     public void openPlanpage(){
         Intent intent = new Intent(this, planpage.class);
+        startActivity(intent);
+    }
+    //direct to QR page
+    public void openQRpage(){
+        Intent intent = new Intent(this, qrpage.class);
         startActivity(intent);
     }
     //direct to shopping
