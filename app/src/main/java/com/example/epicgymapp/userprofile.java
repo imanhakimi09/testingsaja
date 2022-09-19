@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,11 @@ private String userId;
 private Button updatebtn, logoutBtn;
 String _name, _email, _phone, _password;
 
+//    //keep login
+//    SharedPreferences sharedPreferences;
+//    private static final String SHARED_PREF_NAME = "mypreference";
+//    private static final String KEY_EMAIL = "email";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +50,12 @@ String _name, _email, _phone, _password;
         updatebtn = (Button) findViewById(R.id.updateProfile);
         logoutBtn = (Button) findViewById(R.id.logout);
 
+//        //keep login
+//        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+//        String email = sharedPreferences.getString(KEY_EMAIL, null);
+//        if(email != null){
+//            displayEmail.setText(email);
+//        }
         //logout function
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +68,13 @@ String _name, _email, _phone, _password;
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+
+//                        //clear sharedPreference data
+//                        SharedPreferences.Editor editor = sharedPreferences.edit();
+//                        editor.clear();
+//                        editor.commit();
+//                        finish();
+
                         //logout user
                         FirebaseAuth.getInstance().signOut();
                         startActivity(new Intent(userprofile.this, login.class));

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,11 @@ public class homepage extends AppCompatActivity {
     private String userId;
     private TextView textView2;
 
+//    //keep login
+//    SharedPreferences sharedPreferences;
+//    private static final String SHARED_PREF_NAME = "mypreference";
+//    private static final String KEY_EMAIL = "email";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +43,10 @@ public class homepage extends AppCompatActivity {
         userId = user.getUid();
 
         textView2 = (TextView) findViewById(R.id.textView2);
+
+//        //keep login
+//        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+//        String email = sharedPreferences.getString(KEY_EMAIL, null);
 
         reference.child(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override

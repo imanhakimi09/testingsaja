@@ -27,6 +27,11 @@ private Button loginbtn;
 private TextView forgotpwdBtn;
 private FirebaseAuth mAuth;
 
+//    //keep login
+//    SharedPreferences sharedPreferences;
+//    private static final String SHARED_PREF_NAME = "mypreference";
+//    private static final String KEY_EMAIL = "email";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +42,12 @@ private FirebaseAuth mAuth;
         loginbtn = (Button) findViewById(R.id.loginbtn);
         forgotpwdBtn = (TextView) findViewById(R.id.forgotpwd);
         mAuth = FirebaseAuth.getInstance();
+
+//        //keep login
+//        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
+//        if(email != null){
+//            {  openHomepage(); } //direct to homepage
+//        }
 
         //login function
         loginbtn.setOnClickListener(new View.OnClickListener() {
@@ -66,6 +77,11 @@ private FirebaseAuth mAuth;
                     password.requestFocus();
                     return;
                 }
+
+//                //keep login
+//                SharedPreferences.Editor editor = sharedPreferences.edit();
+//                editor.putString(KEY_EMAIL,email.getText().toString());
+//                editor.apply();
 
                 mAuth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
