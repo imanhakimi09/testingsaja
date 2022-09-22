@@ -61,7 +61,8 @@ Timer timer;
 //                timer.schedule(new TimerTask() {
 //                    @Override
 //                    public void run() {
-//                        Toast.makeText(qrpage.this, "Welcome to EpicGym!", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(qrpage.this, "Times Up!", Toast.LENGTH_LONG).show();
+//                        attendance.setText("Attendance status");
 //                        finish();
 //                    }
 //                },5000);
