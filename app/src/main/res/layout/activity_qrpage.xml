@@ -58,6 +58,26 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/workoutBtn"
         android:text="Scan Attendance "
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/scanOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanQR"
+        android:text="Scan Out"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance status"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/scanOut"
+        android:layout_margin="10dp"
         android:layout_centerHorizontal="true"/>
 
 
