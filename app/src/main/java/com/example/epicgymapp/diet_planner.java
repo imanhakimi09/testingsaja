@@ -20,7 +20,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 public class diet_planner extends AppCompatActivity{
-    //public class diet_planner extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 private Spinner spinner;
 private EditText dietFood;
 TextInputLayout textInputLayout1, textInputLayout2;
