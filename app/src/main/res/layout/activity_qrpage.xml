@@ -57,15 +57,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/workoutBtn"
-        android:text="Scan Attendance "
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Scan In " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timerTextview"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/scanQR"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"/>
 
     <Button
         android:id="@+id/scanOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/scanQR"
+        android:layout_below="@+id/timerTextview"
         android:text="Scan Out"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"/>
