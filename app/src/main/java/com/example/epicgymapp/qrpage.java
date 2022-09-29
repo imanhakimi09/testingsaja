@@ -12,20 +12,23 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class qrpage extends AppCompatActivity {
-private Button scanQR, scanOut;
-private TextView attendance;
-Timer timer;
+    private Button scanQR, scanOut;
+    private TextView attendance;
+    Timer timer;
+    private DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qrpage);
-
+        reference = FirebaseDatabase.getInstance().getReference("AttendGym");
         scanQR = (Button) findViewById(R.id.scanQR);
         scanOut = (Button) findViewById(R.id.scanOut);
         attendance = (TextView) findViewById(R.id.attendance);
@@ -42,6 +45,8 @@ Timer timer;
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        String attend = attendance.getText().toString().trim();
+                        reference.child("Present").setValue("Yes");
                         attendance.setText("Status: Present");
                         Toast.makeText(qrpage.this, "Welcome to EpicGym", Toast.LENGTH_LONG).show();
                     }
@@ -81,6 +86,7 @@ Timer timer;
                 builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        reference.child("Present").setValue("No");
                         attendance.setText("Attendance status");
                         Toast.makeText(qrpage.this, "Thank You for coming!", Toast.LENGTH_LONG).show();
                     }

@@ -27,11 +27,6 @@ private Button loginbtn;
 private TextView forgotpwdBtn;
 private FirebaseAuth mAuth;
 
-//    //keep login
-//    SharedPreferences sharedPreferences;
-//    private static final String SHARED_PREF_NAME = "mypreference";
-//    private static final String KEY_EMAIL = "email";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
