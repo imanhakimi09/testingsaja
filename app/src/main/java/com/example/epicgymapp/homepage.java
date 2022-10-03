@@ -26,6 +26,7 @@ public class homepage extends AppCompatActivity {
     private DatabaseReference reference;
     private String userId;
     private TextView textView2;
+    private ImageButton chest, back, arms, legs;
 
 //    //keep login
 //    SharedPreferences sharedPreferences;
@@ -43,7 +44,6 @@ public class homepage extends AppCompatActivity {
         userId = user.getUid();
 
         textView2 = (TextView) findViewById(R.id.textView2);
-
 //        //keep login
 //        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 //        String email = sharedPreferences.getString(KEY_EMAIL, null);
@@ -101,16 +101,13 @@ public class homepage extends AppCompatActivity {
                 {  openshoppage(); }
             }
         });
-
-//        //direct to equipments and machine page button function
-//        ImageButton directEquip = (ImageButton)findViewById(R.id.machine);
-//        directEquip.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                {  openequippage(); }
-//            }
-//        });
-
-
+        //direct to chestpage
+        ImageButton chest = (ImageButton)findViewById(R.id.chest);
+        chest.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openChestPage(); }
+            }
+        });
 
     }
 
@@ -145,9 +142,8 @@ public class homepage extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //direct to equipments and machines
-//    public void openequippage(){
-//        Intent intent = new Intent(this, equippage.class);
-//        startActivity(intent);
-//    }
+    public void openChestPage(){
+        Intent intent = new Intent(this, chestworkout.class);
+        startActivity(intent);
+    }
 }

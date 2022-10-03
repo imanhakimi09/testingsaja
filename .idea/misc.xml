@@ -4,12 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/FYP/app/src/main/res/layout/activity_armsequip.xml" value="0.264" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_armsworkout.xml" value="0.24010416666666667" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_backequip.xml" value="0.264" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_backworkout.xml" value="0.24010416666666667" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_chestequip.xml" value="0.2" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_chestworkout.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_diet_planner.xml" value="0.264" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_equipments.xml" value="0.264" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_forgotpassword.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_gympage.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_homepage.xml" value="0.2" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_legequip.xml" value="0.176" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_legsworkout.xml" value="0.24010416666666667" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_plannerpage.xml" value="0.25416666666666665" />

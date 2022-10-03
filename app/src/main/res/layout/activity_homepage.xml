@@ -58,14 +58,14 @@
             android:orientation="vertical">
 
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/chest"
                 android:layout_width="350dp"
                 android:layout_height="236dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginEnd="35dp"
                 android:gravity="center"
-                app:srcCompat="@drawable/chest1" />
+                android:background="@drawable/chest1" />
 
             <Space
                 android:layout_width="1dp"
@@ -82,7 +82,7 @@
                 android:textStyle="bold" />
 
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/back"
                 android:layout_width="350dp"
                 android:layout_height="236dp"
@@ -90,7 +90,7 @@
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="35dp"
                 android:gravity="center"
-                app:srcCompat="@drawable/back1" />
+                android:background="@drawable/back1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -102,7 +102,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/legs"
                 android:layout_width="350dp"
                 android:layout_height="236dp"
@@ -110,7 +110,7 @@
                 android:layout_marginTop="35dp"
                 android:layout_marginEnd="35dp"
                 android:gravity="center"
-                app:srcCompat="@drawable/legs1" />
+                android:background="@drawable/legs1" />
 
             <Space
                 android:layout_width="1dp"
@@ -126,14 +126,14 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/arms"
                 android:layout_width="350dp"
                 android:layout_height="236dp"
                 android:layout_marginStart="35dp"
                 android:layout_marginEnd="35dp"
                 android:gravity="center"
-                app:srcCompat="@drawable/arm1" />
+                android:background="@drawable/arm1" />
 
             <Space
                 android:layout_width="1dp"
@@ -162,7 +162,7 @@
                 android:gravity="center"
                 android:scaleType="fitXY"
                 android:clickable="true"
-                app:srcCompat="@drawable/machines" />
+                android:background="@drawable/machines" />
 
             <Space
                 android:layout_width="1dp"

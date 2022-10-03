@@ -78,6 +78,7 @@ public class qrpage extends AppCompatActivity {
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+
                         //cancel scan
                         Toast.makeText(qrpage.this, "Cancel Scan QR code", Toast.LENGTH_LONG).show();
                     }
