@@ -26,7 +26,6 @@ public class homepage extends AppCompatActivity {
     private DatabaseReference reference;
     private String userId;
     private TextView textView2;
-    private ImageButton chest, back, arms, legs;
 
 //    //keep login
 //    SharedPreferences sharedPreferences;
@@ -108,6 +107,14 @@ public class homepage extends AppCompatActivity {
                 {  openChestPage(); }
             }
         });
+        //direct to backpage
+        ImageButton back = (ImageButton) findViewById(R.id.back);
+        back.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openBackPage(); }
+            }
+        });
+
 
     }
 
@@ -141,9 +148,14 @@ public class homepage extends AppCompatActivity {
         Intent intent = new Intent(this, shoppage.class);
         startActivity(intent);
     }
-
+    //chestpage
     public void openChestPage(){
         Intent intent = new Intent(this, chestworkout.class);
+        startActivity(intent);
+    }
+    //backpage
+    public void openBackPage(){
+        Intent intent = new Intent(this, backworkout.class);
         startActivity(intent);
     }
 }
