@@ -107,13 +107,13 @@ public class homepage extends AppCompatActivity {
                 {  openChestPage(); }
             }
         });
-        //direct to backpage
-        ImageButton back = (ImageButton) findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                {  openBackPage(); }
-            }
-        });
+//        //direct to backpage
+//        ImageButton back = (ImageButton) findViewById(R.id.back);
+//        back.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                {  openBackPage(); }
+//            }
+//        });
 
 
     }
@@ -153,9 +153,9 @@ public class homepage extends AppCompatActivity {
         Intent intent = new Intent(this, chestworkout.class);
         startActivity(intent);
     }
-    //backpage
-    public void openBackPage(){
-        Intent intent = new Intent(this, backworkout.class);
-        startActivity(intent);
-    }
+//    //backpage
+//    public void openBackPage(){
+//        Intent intent = new Intent(this, backworkout.class);
+//        startActivity(intent);
+//    }
 }
