@@ -38,6 +38,14 @@
         android:layout_marginLeft="40dp"
         android:text="Welcome!" />
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
     //this will be the button to navigate to each page
     <LinearLayout
         android:layout_width="match_parent"
