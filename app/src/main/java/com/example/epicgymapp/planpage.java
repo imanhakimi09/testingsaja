@@ -111,7 +111,7 @@ public class planpage extends AppCompatActivity {
     }
     //direct to meal planner
     public void openMealPlanner(){
-        Intent intent = new Intent(this, diet_planner.class);
+        Intent intent = new Intent(this, diet_planner1.class);
         startActivity(intent);
     }
 
