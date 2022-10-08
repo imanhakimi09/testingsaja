@@ -40,7 +40,7 @@
 
 
     <ImageButton
-        android:id="@+id/workoutBtn"
+        android:id="@+id/scanBtn"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_below="@id/textView"
@@ -56,7 +56,7 @@
         android:id="@+id/scanQR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/workoutBtn"
+        android:layout_below="@+id/scanBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"

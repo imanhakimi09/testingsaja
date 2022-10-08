@@ -20,12 +20,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 public class diet_planner extends AppCompatActivity{
-private Spinner spinner;
-private EditText dietFood;
-TextInputLayout textInputLayout1, textInputLayout2;
-AutoCompleteTextView autoCompleteTextView1, autoCompleteTextView2;
-private Button addDietBtn;
-private DatabaseReference reference;
+    private Spinner spinner;
+    private EditText dietFood;
+    TextInputLayout textInputLayout1, textInputLayout2;
+    AutoCompleteTextView autoCompleteTextView1, autoCompleteTextView2;
+    private Button addDietBtn;
+    private DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
