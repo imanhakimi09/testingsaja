@@ -27,7 +27,7 @@
         android:layout_marginLeft="40dp"
         android:text="Welcome!" />
 
-    <TextView
+    <Button
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,74 +38,87 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/dietType"
-        android:layout_below="@+id/textView"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Select Diet Plan"
-        android:padding="20dp"
-        android:layout_margin="10dp">
-
-        <AutoCompleteTextView
-            android:id="@+id/dropdownDiet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <EditText
-        android:id="@+id/dietFood"
+        android:id="@+id/editText"
+        android:layout_below="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dietType"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_fastfood_24"
-        android:drawablePadding="20dp"
-        android:hint="Enter Food Name"
-        android:padding="20dp"
+        android:layout_height="match_parent"
+        android:hint="Enter your plan here"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
         android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="316dp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/dietMeal"
-        android:layout_below="@+id/dietFood"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Select Meal Plan"
-        android:padding="20dp"
-        android:layout_margin="10dp">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/dietType"-->
+<!--        android:layout_below="@+id/textView"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Select Diet Plan"-->
+<!--        android:padding="20dp"-->
+<!--        android:layout_margin="10dp">-->
 
-        <AutoCompleteTextView
-            android:id="@+id/dropdownMeal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none"
-            />
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/dropdownDiet"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="none"-->
+<!--            />-->
 
-    </com.google.android.material.textfield.TextInputLayout>
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
-    <Button
-        android:id="@+id/addDietBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/dietMeal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:padding="20dp"
-        android:text="Add Plan" />
+<!--    <EditText-->
+<!--        android:id="@+id/dietFood"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/dietType"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="#30ffffff"-->
+<!--        android:drawableLeft="@drawable/ic_baseline_fastfood_24"-->
+<!--        android:drawablePadding="20dp"-->
+<!--        android:hint="Enter Food Name"-->
+<!--        android:padding="20dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white" />-->
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/dietMeal"-->
+<!--        android:layout_below="@+id/dietFood"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Select Meal Plan"-->
+<!--        android:padding="20dp"-->
+<!--        android:layout_margin="10dp">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/dropdownMeal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="none"-->
+<!--            />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/addDietBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/dietMeal"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:padding="20dp"-->
+<!--        android:text="Add Plan" />-->
 
 <!--    <Spinner-->
 <!--        android:id="@+id/spinner1"-->
