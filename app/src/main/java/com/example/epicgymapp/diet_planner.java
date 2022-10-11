@@ -42,20 +42,20 @@ public class diet_planner extends AppCompatActivity{
         textview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //push data to database
-                String newPlan = editText.getText().toString().trim();
-
-                if(newPlan.isEmpty()){
-                    editText.setError("Data cannot be empty");
-                    editText.requestFocus();
-                    return;
-                }
-
-                HashMap<String, String > dataMap = new HashMap<String, String>();
-                dataMap.put("Diet Plan", newPlan);
-
-                reference.push().setValue(dataMap);
-                Toast.makeText(diet_planner.this, "New Diet plan added", Toast.LENGTH_SHORT).show();
+//                //push data to database
+//                String newPlan = editText.getText().toString().trim();
+//
+//                if(newPlan.isEmpty()){
+//                    editText.setError("Data cannot be empty");
+//                    editText.requestFocus();
+//                    return;
+//                }
+//
+//                HashMap<String, String > dataMap = new HashMap<String, String>();
+//                dataMap.put("Diet Plan", newPlan);
+//
+//                reference.push().setValue(dataMap);
+//                Toast.makeText(diet_planner.this, "New Diet plan added", Toast.LENGTH_SHORT).show();
 
                 openDietPlan1();
             }

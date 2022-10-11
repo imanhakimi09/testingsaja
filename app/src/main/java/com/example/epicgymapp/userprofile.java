@@ -22,12 +22,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import org.w3c.dom.Text;
+
 public class userprofile extends AppCompatActivity {
 private FirebaseUser user;
 private DatabaseReference reference;
 private String userId;
 private Button updatebtn, logoutBtn;
 String _name, _email, _phone, _password;
+private TextView membership;
 
 //    //keep login
 //    SharedPreferences sharedPreferences;
@@ -49,6 +52,7 @@ String _name, _email, _phone, _password;
          EditText displayPassword = (EditText) findViewById(R.id.viewPassword);
         updatebtn = (Button) findViewById(R.id.updateProfile);
         logoutBtn = (Button) findViewById(R.id.logout);
+        membership = (TextView) findViewById(R.id.membership);
 
 //        //keep login
 //        sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
@@ -56,6 +60,13 @@ String _name, _email, _phone, _password;
 //        if(email != null){
 //            displayEmail.setText(email);
 //        }
+        //membership register
+        membership.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMembership();
+            }
+        });
         //logout function
         logoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,6 +156,11 @@ String _name, _email, _phone, _password;
                  dialog.show();
              }
          });
+    }
+
+    private void openMembership() {
+        Intent intent = new Intent(this, membershippage.class);
+        startActivity(intent);
     }
 //    //update name function
 //    private boolean updateName() {

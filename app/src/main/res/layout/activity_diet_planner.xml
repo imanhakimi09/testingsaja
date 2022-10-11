@@ -43,12 +43,14 @@
         android:layout_below="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="Enter your plan here"
+        android:hint="Enter Food Type, Food Name, Meal Type and Day"
         android:layout_margin="10dp"
         android:ems="10"
+        android:paddingTop="5dp"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:textColor="@color/white"
+        android:background="#30ffffff"
         tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="316dp" />
 

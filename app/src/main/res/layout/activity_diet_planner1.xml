@@ -42,6 +42,8 @@
         android:layout_below="@+id/addPlan"
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp" />
 </RelativeLayout>
