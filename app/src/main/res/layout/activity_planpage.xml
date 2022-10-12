@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="150dp"
         android:text="This is Planner Page"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -46,24 +46,41 @@
         android:layout_below="@id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/wrkoutplan"
         android:padding="20dp" />
+    <TextView
+        android:id="@+id/textWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout Planner"
+        android:textSize="15dp"
+        android:layout_below="@id/workoutBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
 
     <ImageButton
         android:id="@+id/mealBtn"
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:layout_below="@id/workoutBtn"
+        android:layout_below="@id/textWorkout"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/eatplan"
         android:padding="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diet Planner"
+        android:textSize="15dp"
+        android:layout_below="@id/mealBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
 
     //this will be the button to navigate to each page
     <LinearLayout

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="150dp"
         android:text="QR Page"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -43,20 +43,35 @@
         android:id="@+id/scanBtn"
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:layout_below="@id/textView"
+        android:layout_below="@id/scanBtns"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/wrkoutplan"
         android:padding="20dp" />
+    <TextView
+        android:id="@+id/trainerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scanBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Book Personal Trainer"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
+    <LinearLayout
+        android:id="@+id/scanBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timerTextview"
+        android:gravity="center">
     <Button
         android:id="@+id/scanQR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/scanBtn"
+        android:layout_below="@+id/timerTextview"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
@@ -64,35 +79,44 @@
         android:layout_marginBottom="10dp"
         android:text="Scan In " />
 
+        <Button
+            android:id="@+id/scanOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan Out"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
     <TextView
+        android:id="@+id/timerTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/timerTextview"
+        android:layout_below="@id/attendance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:text="00:00"
         android:textColor="@color/white"
-        android:textSize="20dp"
-        android:layout_below="@id/scanQR"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"/>
+        android:textSize="20dp" />
 
-    <Button
-        android:id="@+id/scanOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/timerTextview"
-        android:text="Scan Out"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="10dp"/>
+
     <TextView
         android:id="@+id/attendance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Attendance status"
         android:textColor="@color/white"
-        android:textSize="20dp"
-        android:layout_below="@+id/scanOut"
-        android:layout_margin="10dp"
-        android:layout_centerHorizontal="true"/>
+        android:textStyle="bold"
+        android:textSize="20dp" />
 
 
     //this will be the button to navigate to each page

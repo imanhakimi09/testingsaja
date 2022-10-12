@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/homepage"
+    android:background="@drawable/background3"
     tools:context=".membershippage">
 
     <TextView
@@ -12,9 +12,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="150dp"
         android:text="Membership Page"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -28,10 +28,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:drawablePadding="5dp"
         android:text="You are not a member"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="15dp" />
 
     <LinearLayout
@@ -39,6 +37,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/membershipText"
+        android:layout_margin="10dp"
+        android:background="@color/teal_700"
         android:gravity="center">
     <TextView
         android:layout_width="wrap_content"
@@ -50,8 +50,8 @@
         android:textColor="@color/white"/>
     <Button
         android:id="@+id/oneMonthMembership"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
         android:layout_margin="15dp"
         android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"/>
     </LinearLayout>
@@ -61,6 +61,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/oneMonth"
+        android:layout_margin="10dp"
+        android:background="@color/teal_700"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
@@ -72,8 +74,8 @@
             android:textColor="@color/white"/>
         <Button
             android:id="@+id/threeMonthMembership"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
             android:layout_margin="15dp"
             android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"/>
     </LinearLayout>
@@ -83,6 +85,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/threeMonth"
+        android:background="@color/teal_700"
+        android:layout_margin="10dp"
         android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
@@ -94,8 +98,8 @@
             android:textColor="@color/white"/>
         <Button
             android:id="@+id/oneYearMembership"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
             android:layout_margin="15dp"
             android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"/>
     </LinearLayout>

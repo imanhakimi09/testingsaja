@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="150dp"
         android:text="Workout Planner"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -83,7 +83,6 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="#30ffffff"
         android:padding="20dp"
         android:textColor="@color/white" />
 
@@ -110,9 +109,7 @@
             android:id="@+id/increment"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:text="+"
-            android:onClick="increment"
-            />
+            android:text="+" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,9 +125,7 @@
             android:id="@+id/decrement"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:text="-"
-            android:onClick="decrement"
-            />
+            android:text="-" />
     </LinearLayout>
 
     <Button
