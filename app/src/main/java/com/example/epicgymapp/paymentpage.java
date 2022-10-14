@@ -16,6 +16,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+
 public class paymentpage extends AppCompatActivity {
 
     private EditText cardNumber;
@@ -25,7 +27,7 @@ public class paymentpage extends AppCompatActivity {
     private EditText phoneNumber;
     private EditText amount;
     private Button payBtn;
-    private FirebaseAuth mAuth;
+    private DatabaseReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,47 +46,11 @@ public class paymentpage extends AppCompatActivity {
         amount = (EditText) findViewById(R.id.amount);
         payBtn = (Button)findViewById((R.id.payBtn));
 
-        //connect to database
-        mAuth = FirebaseAuth.getInstance();
-
         //pay now button and validations
         payBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //alert user after clicking Pay button
-                AlertDialog.Builder builder = new AlertDialog.Builder(paymentpage.this);
-                builder.setTitle("Proceed payment");
-                builder.setMessage("Are these details correct?");
-                builder.setCancelable(false);
-                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int which) {
-
-                        reference.child("Paid").setValue("No");
-                        Toast.makeText(paymentpage.this, "Your purchase was successful!", Toast.LENGTH_LONG).show();
-
-                        Intent intent = new Intent(paymentpage.this, paysuccessful.class);
-                        startActivity(intent);
-
-
-                    }
-
-                });
-
-                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        //cancel payment
-                        Toast.makeText(paymentpage.this, "Cancel payment", Toast.LENGTH_LONG).show();
-                    }
-                });
-                AlertDialog dialog = builder.create();
-                dialog.show();
-
-
-
-
+                //validation
                 String cardnum = cardNumber.getText().toString();
                 String expiryDate = expDate.getText().toString();
                 String cvv = cardCvv.getText().toString();
@@ -141,13 +107,13 @@ public class paymentpage extends AppCompatActivity {
 
                 //phone
                 if (phone.isEmpty()){
-                    postalCode.setError("Phone number is required");
-                    postalCode.requestFocus();
+                    phoneNumber.setError("Phone number is required");
+                    phoneNumber.requestFocus();
                     return;
                 }
                 if (phone.length() > 7){
-                    postalCode.setError("Phone number must be 7 digits");
-                    postalCode.requestFocus();
+                    phoneNumber.setError("Phone number must be 7 digits");
+                    phoneNumber.requestFocus();
                     return;
                 }
 
@@ -157,6 +123,46 @@ public class paymentpage extends AppCompatActivity {
                     amount.requestFocus();
                     return;
                 }
+
+                //alert user after clicking Pay button
+                AlertDialog.Builder builder = new AlertDialog.Builder(paymentpage.this);
+                builder.setTitle("Proceed payment");
+                builder.setMessage("Are these details correct?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+
+//                        reference.child("Paid").setValue("Yes");
+                        HashMap<String, String > dataMap = new HashMap<String, String>();
+                        dataMap.put("Card No", cardnum);
+                        dataMap.put("Expiry Date", expiryDate);
+                        dataMap.put("CVV", cvv);
+                        dataMap.put("Postal Code", pCode);
+                        dataMap.put("Phone No", phone);
+                        dataMap.put("Amount", amt);
+
+                        reference.push().setValue(dataMap);
+                        Toast.makeText(paymentpage.this, "Your purchase was successful!", Toast.LENGTH_LONG).show();
+
+                        Intent intent = new Intent(paymentpage.this, paysuccessful.class);
+                        startActivity(intent);
+
+
+                    }
+
+                });
+
+                builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        //cancel payment
+                        Toast.makeText(paymentpage.this, "Cancel payment", Toast.LENGTH_LONG).show();
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+
             }
         });
 
