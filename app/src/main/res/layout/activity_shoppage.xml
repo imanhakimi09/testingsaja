@@ -40,11 +40,23 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_below="@+id/textView"
         android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/textView"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp" />
+
+    <Button
+        android:id="@+id/paymentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="10dp"
+        android:padding="18dp"
+        android:text="payment page" />
 
     //this will be the button to navigate to each page
     <LinearLayout
