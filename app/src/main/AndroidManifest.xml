@@ -16,6 +16,12 @@
         android:theme="@style/Theme.EpicGymApp"
         tools:targetApi="31">
         <activity
+            android:name=".paysuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".paymentpage"
+            android:exported="false" />
+        <activity
             android:name=".diet_planner1"
             android:exported="false" />
         <activity
