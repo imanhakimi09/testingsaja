@@ -185,49 +185,6 @@
 
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="117dp"
-        android:layout_alignParentBottom="true"
-        android:gravity="center">
 
-        //this will be the button to navigate to each page
-
-        <ImageButton
-            android:id="@+id/directHome"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/ic_baseline_home_24" />
-
-        <ImageButton
-            android:id="@+id/directGym"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/ic_baseline_run_circle_24" />
-
-        <ImageButton
-            android:id="@+id/directQR"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_margin="20dp"
-            android:background="@drawable/ic_baseline_add_circle_24" />
-
-        <ImageButton
-            android:id="@+id/directPlan"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/ic_baseline_menu_book_24" />
-
-        <ImageButton
-            android:id="@+id/directShop"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="15dp"
-            android:background="@drawable/ic_outline_shopping_cart_24" />
-
-    </LinearLayout>
 
 </RelativeLayout>
