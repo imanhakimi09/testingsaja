@@ -66,7 +66,10 @@ public class paymentpage extends AppCompatActivity {
 
                         Intent intent = new Intent(paymentpage.this, paysuccessful.class);
                         startActivity(intent);
+
+
                     }
+
                 });
 
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
