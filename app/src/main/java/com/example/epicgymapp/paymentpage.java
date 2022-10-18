@@ -169,3 +169,142 @@ public class paymentpage extends AppCompatActivity {
 
     }
 }
+
+
+
+//Paypal integration (not working)
+//import androidx.activity.result.ActivityResult;
+//        import androidx.activity.result.ActivityResultCallback;
+//        import androidx.activity.result.ActivityResultLauncher;
+//        import androidx.activity.result.contract.ActivityResultContract;
+//        import androidx.activity.result.contract.ActivityResultContracts;
+//        import androidx.appcompat.app.AppCompatActivity;
+//
+//        import android.app.Activity;
+//        import android.app.AlertDialog;
+//        import android.content.Intent;
+//        import android.content.IntentFilter;
+//        import android.os.Bundle;
+//        import android.text.Editable;
+//        import android.text.InputType;
+//        import android.view.View;
+//        import android.widget.Button;
+//        import android.widget.EditText;
+//        import android.widget.Toast;
+//
+//        import com.braintreepayments.cardform.view.CardForm;
+//        import com.paypal.android.sdk.payments.PayPalConfiguration;
+//        import com.paypal.android.sdk.payments.PayPalPayment;
+//        import com.paypal.android.sdk.payments.PayPalPaymentDetails;
+//        import com.paypal.android.sdk.payments.PayPalService;
+//        import com.paypal.android.sdk.payments.PaymentConfirmation;
+//
+//        import org.json.JSONException;
+//
+//        import java.math.BigDecimal;
+//
+//public class PaymentActivity extends AppCompatActivity {
+//
+//    public static final int PAYPAL_REQUEST_CODE = 123;
+//
+//    public static final String clientKey = "AT2EdKAsUnhKzLQIj-t0vpD_1Ou-C81pjFDltC7wdMEMe7ivEIamUxe-TRk92wz0PsxkHnGX29Hr3_R_";
+//
+//    //PayPal config object
+//    private static PayPalConfiguration config = new PayPalConfiguration()
+//            .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX) //use Sandbox bc we on Test
+//            .clientId(clientKey); //pass on the clientKey
+//
+//    Button btnPayNow;
+//    EditText edtAmount;
+//
+//    String amount = "";
+//
+//    @Override
+//    protected void onDestroy() {
+//        stopService(new Intent(this, PayPalService.class));
+//        super.onDestroy();
+//    }
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_payment);
+//
+//        //Start Poypal Service
+//        Intent intent = new Intent(this, PayPalService.class);
+//        intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
+//        startService(intent);
+//
+//        //buttons
+//        btnPayNow = (Button)findViewById(R.id.btnPayNow);
+//        edtAmount = (EditText) findViewById(R.id.edtAmount);
+//
+//        //call the function
+//        btnPayNow.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                processPayment();
+//            }
+//        });
+//    }
+//
+//    ActivityResultLauncher<Intent> startForResult = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+//        @Override
+//        public void onActivityResult(ActivityResult result) {
+//            if (result != null && result.getResultCode() == RESULT_OK){
+//                if (result.getData() != null) {
+//
+//
+//                }
+//            }
+//        }
+//    });
+//
+//    private void processPayment(){
+//
+//        // Getting the amount from editText
+//        String amount = edtAmount.getText().toString();
+//
+//        // Creating a paypal payment on below line.
+//        PayPalPayment payment = new PayPalPayment(new BigDecimal(String.valueOf(amount)),"USD",
+//                "Test Payment", PayPalPayment.PAYMENT_INTENT_SALE);
+//
+//        // Creating Paypal Payment activity intent
+//        Intent intent = new Intent(this, PaymentActivity.class);
+//
+//        //putting the paypal configuration to the intent
+//        intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
+//
+//        // Putting paypal payment to the intent
+//        Intent Intent = new Intent(android.content.Intent.ACTION_CHOOSER);
+//        Intent.putExtra(com.paypal.android.sdk.payments.PaymentActivity.EXTRA_PAYMENT, payment);
+//        //startActivityForResult(Intent, PAYPAL_REQUEST_CODE);
+//        startForResult.launch(intent); --> this is where it is deprecated
+//    }
+//
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if (requestCode == PAYPAL_REQUEST_CODE){
+//            if (resultCode == RESULT_OK){
+//                PaymentConfirmation confirmation = data.getParcelableExtra(com.paypal.android.sdk.payments.PaymentActivity.EXTRA_RESULT_CONFIRMATION);
+//                if (confirmation != null){
+//                    try {
+//                        String paymentDetails = confirmation.toJSONObject().toString(4);
+//
+//                        startActivity(new Intent(this, PayPalPaymentDetails.class)
+//                                .putExtra("PaymentDetails", paymentDetails)
+//                                .putExtra("PaymentAmount", amount));
+//
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//            else if (resultCode == Activity.RESULT_CANCELED)
+//                Toast.makeText(this, "Cancel", Toast.LENGTH_SHORT).show();
+//        }
+//        else if(resultCode == com.paypal.android.sdk.payments.PaymentActivity.RESULT_EXTRAS_INVALID)
+//            Toast.makeText(this, "Invalid", Toast.LENGTH_SHORT).show();
+//    }
+//}

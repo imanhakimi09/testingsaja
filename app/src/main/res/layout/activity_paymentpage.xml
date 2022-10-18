@@ -136,3 +136,69 @@
         android:text="Pay Now" />
 
 </RelativeLayout>
+
+
+
+
+
+<!--Paypal integration (not working)-->
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@drawable/homepage"-->
+<!--tools:context=".PaymentActivity">-->
+
+<!--<com.braintreepayments.cardform.view.CardForm-->
+<!--    android:id="@+id/card_form"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    />-->
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="15dp"-->
+<!--        android:layout_marginTop="60dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:text="Payment Page"/>-->
+
+<!--<Button-->
+<!--    android:id="@+id/btnPayNow"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_alignParentBottom="true"-->
+<!--    android:layout_marginBottom="30dp"-->
+<!--    android:layout_marginLeft="40dp"-->
+<!--    android:layout_marginRight="40dp"-->
+<!--    android:layout_marginTop="10dp"-->
+<!--    android:text="Pay Now"-->
+<!--    android:textColor="@color/white"-->
+<!--    />-->
+
+
+
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edtAmount"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Amount" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnPayNow"-->
+<!--            android:text="Pay Now"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->
