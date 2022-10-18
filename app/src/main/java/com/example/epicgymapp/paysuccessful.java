@@ -62,14 +62,14 @@ public class paysuccessful extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                openshoppage();
+                openHomepage();
             }
         });
     }
 
 
-    public void openshoppage(){
-        Intent intent = new Intent(this, shoppage.class);
+    public void openHomepage(){
+        Intent intent = new Intent(this, homepage.class);
         startActivity(intent);
     }
 
