@@ -89,6 +89,13 @@ public class planpage extends AppCompatActivity {
                 {  openUserProfile(); }
             }
         });
+        //direct to QR page button function
+        ImageButton directQR = (ImageButton)findViewById(R.id.directQR);
+        directQR.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                { {  openQRpage(); } }
+            }
+        });
         //direct to plan page button function
         ImageButton directPlan = (ImageButton)findViewById(R.id.directPlan);
         directPlan.setOnClickListener(new View.OnClickListener() {
@@ -132,6 +139,11 @@ public class planpage extends AppCompatActivity {
     }
     public void openPlanpage(){
         Intent intent = new Intent(this, planpage.class);
+        startActivity(intent);
+    }
+    //direct to QR page
+    public void openQRpage(){
+        Intent intent = new Intent(this, qrpage.class);
         startActivity(intent);
     }
     public void openshoppage(){
