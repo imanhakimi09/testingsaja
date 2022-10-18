@@ -1,6 +1,7 @@
 package com.example.epicgymapp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
@@ -72,8 +73,66 @@ public class qrpage extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+        //direct to homepage button function
+        ImageButton directHome = (ImageButton)findViewById(R.id.directHome);
+        directHome.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openHomepage(); }
+            }
+        });
+        //direct to userprofile button function
+        ImageButton directGym = (ImageButton)findViewById(R.id.directGym);
+        directGym.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openUserProfile(); }
+            }
+        });
+        //direct to QR page button function
+        ImageButton directQR = (ImageButton)findViewById(R.id.directQR);
+        directQR.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText( qrpage.this, "This is QR page", Toast.LENGTH_SHORT).show();
+            }
+        });
+        //direct to plan page button function
+        ImageButton directPlan = (ImageButton)findViewById(R.id.directPlan);
+        directPlan.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openPlanpage(); }
+            }
+        });
+        //direct to shop page button function
+        ImageButton directShop = (ImageButton)findViewById(R.id.directShop);
+        directShop.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openshoppage(); }
+            }
+        });
     }
 
+    //direct to homepage
+    public void openHomepage(){
+        Intent intent = new Intent(this, homepage.class);
+        startActivity(intent);
+    }
+    //direct to userprofile
+    public void openUserProfile(){
+        Intent intent = new Intent(this, userprofile.class);
+        startActivity(intent);
+    }
+    //direct to planner
+    public void openPlanpage(){
+        Intent intent = new Intent(this, planpage.class);
+        startActivity(intent);
+    }
+    //direct to shopping
+    public void openshoppage(){
+        Intent intent = new Intent(this, shoppage.class);
+        startActivity(intent);
+    }
+
+    //scan function
     private void scanning() {
         ScanOptions options = new ScanOptions();
         options.setPrompt("Volume up to use flash");
