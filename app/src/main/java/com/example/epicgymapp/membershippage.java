@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -16,6 +17,9 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 public class membershippage extends AppCompatActivity {
     private TextView membershipText;
@@ -72,6 +76,26 @@ public class membershippage extends AppCompatActivity {
                         membershipText.setText("Your membership is valid for 1 Month");
                         Toast.makeText(membershippage.this, "Registered successful", Toast.LENGTH_LONG).show();
                         reference.child("Membership Status").setValue("One Month");
+
+                        //timer
+                        long duration = TimeUnit.MINUTES.toMillis(1);
+                        new CountDownTimer(duration, 1000) {
+                            @Override
+                            public void onTick(long l) {
+                                String timerCountdown = String.format(Locale.ENGLISH, "%02d : %02d",
+                                        TimeUnit.MILLISECONDS.toMinutes(l),
+                                        TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));
+
+                            }
+
+                            @Override
+                            public void onFinish() {
+                                membershipText.setText("You are not a member!");
+                                reference.child("Membership Status").setValue("Non-member");
+                                Toast.makeText(membershippage.this, "Your membership plan has expired!", Toast.LENGTH_LONG).show();
+                            }
+                        }.start();
+
                     }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -98,6 +122,26 @@ public class membershippage extends AppCompatActivity {
                         membershipText.setText("Your membership is valid for 3 Months");
                         Toast.makeText(membershippage.this, "Registered successful", Toast.LENGTH_LONG).show();
                         reference.child("Membership Status").setValue("Three Month");
+
+                        //timer
+                        long duration = TimeUnit.MINUTES.toMillis(1);
+                        new CountDownTimer(duration, 1000) {
+                            @Override
+                            public void onTick(long l) {
+                                String timerCountdown = String.format(Locale.ENGLISH, "%02d : %02d",
+                                        TimeUnit.MILLISECONDS.toMinutes(l),
+                                        TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));
+
+                            }
+
+                            @Override
+                            public void onFinish() {
+                                membershipText.setText("You are not a member!");
+                                reference.child("Membership Status").setValue("Non-member");
+                                Toast.makeText(membershippage.this, "Your membership plan has expired!", Toast.LENGTH_LONG).show();
+                            }
+                        }.start();
+
                     }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -124,6 +168,26 @@ public class membershippage extends AppCompatActivity {
                         membershipText.setText("Your membership is valid for 1 Year");
                         Toast.makeText(membershippage.this, "Registered successful", Toast.LENGTH_LONG).show();
                         reference.child("Membership Status").setValue("One Year");
+
+                        //timer
+                        long duration = TimeUnit.MINUTES.toMillis(1);
+                        new CountDownTimer(duration, 1000) {
+                            @Override
+                            public void onTick(long l) {
+                                String timerCountdown = String.format(Locale.ENGLISH, "%02d : %02d",
+                                        TimeUnit.MILLISECONDS.toMinutes(l),
+                                        TimeUnit.MILLISECONDS.toSeconds(l) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(l)));
+
+                            }
+
+                            @Override
+                            public void onFinish() {
+                                membershipText.setText("You are not a member!");
+                                reference.child("Membership Status").setValue("Non-member");
+                                Toast.makeText(membershippage.this, "Your membership plan has expired!", Toast.LENGTH_LONG).show();
+                            }
+                        }.start();
+
                     }
                 });
                 builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
