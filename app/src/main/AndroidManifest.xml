@@ -16,6 +16,9 @@
         android:theme="@style/Theme.EpicGymApp"
         tools:targetApi="31">
         <activity
+            android:name=".viewWorkoutPlanner"
+            android:exported="false" />
+        <activity
             android:name=".paysuccessful"
             android:exported="false" />
         <activity
