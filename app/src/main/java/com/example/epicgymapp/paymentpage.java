@@ -147,6 +147,8 @@ public class paymentpage extends AppCompatActivity {
                         Toast.makeText(paymentpage.this, "Your purchase was successful!", Toast.LENGTH_LONG).show();
 
                         Intent intent = new Intent(paymentpage.this, paysuccessful.class);
+                        intent.putExtra("amount", amt);
+                        intent.putExtra("phoneNo", phone);
                         startActivity(intent);
 
 

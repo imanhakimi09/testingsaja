@@ -24,7 +24,7 @@ public class paysuccessful extends AppCompatActivity {
     private Button paymentBtn;
     private DatabaseReference reference;
     private String userId;
-    private static String amountPaid;
+//    private static String amountPaid;
     private FirebaseUser user;
 
 
@@ -74,11 +74,7 @@ public class paysuccessful extends AppCompatActivity {
                     cardName1.setText(name);
                     phonenumb1.setText(phone);
                 }
-
-
-
             }
-
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
@@ -86,6 +82,9 @@ public class paysuccessful extends AppCompatActivity {
             }
         });
 
+        //retrieve and display amount paid
+        String amt = getIntent().getStringExtra("amount");
+        amountPaid1.setText("$ " + amt);
 
         done.setOnClickListener(new View.OnClickListener(){
 
