@@ -100,11 +100,44 @@ public class homepage extends AppCompatActivity {
                 {  openshoppage(); }
             }
         });
+
         //direct to chestpage
-        ImageButton chest = (ImageButton)findViewById(R.id.chest);
-        chest.setOnClickListener(new View.OnClickListener() {
+        ImageButton chestBtn = (ImageButton) findViewById(R.id.chestBtn);
+        chestBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 {  openChestPage(); }
+            }
+        });
+
+        //direct to backpage
+        ImageButton backBtn = (ImageButton) findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openBackPage(); }
+            }
+        });
+
+        //direct to legspage
+        ImageButton legsBtn = (ImageButton) findViewById(R.id.legsBtn);
+        legsBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openLegsPage(); }
+            }
+        });
+
+        //direct to armspage
+        ImageButton armsBtn = (ImageButton) findViewById(R.id.armsBtn);
+        armsBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openArmsPage(); }
+            }
+        });
+
+        //direct to cardiopage
+        ImageButton cardioBtn = (ImageButton) findViewById(R.id.cardioBtn);
+        cardioBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                {  openCardioPage(); }
             }
         });
 //        //direct to backpage
@@ -116,6 +149,36 @@ public class homepage extends AppCompatActivity {
 //        });
 
 
+    }
+
+    //chestpage
+    public void openChestPage(){
+        Intent intent = new Intent(this, chestpage.class);
+        startActivity(intent);
+    }
+
+    //backpage
+    public void openBackPage(){
+        Intent intent = new Intent(this, backworkout.class);
+        startActivity(intent);
+    }
+
+    //legspage
+    public void openLegsPage(){
+        Intent intent = new Intent(this, legsworkout.class);
+        startActivity(intent);
+    }
+
+    //armspage
+    public void openArmsPage(){
+        Intent intent = new Intent(this, armsworkout.class);
+        startActivity(intent);
+    }
+
+    //cardiopage
+    public void openCardioPage(){
+        Intent intent = new Intent(this, cardioworkout.class);
+        startActivity(intent);
     }
 
     //direct to homepage
@@ -148,11 +211,7 @@ public class homepage extends AppCompatActivity {
         Intent intent = new Intent(this, shoppage.class);
         startActivity(intent);
     }
-    //chestpage
-    public void openChestPage(){
-        Intent intent = new Intent(this, chestworkout.class);
-        startActivity(intent);
-    }
+
 //    //backpage
 //    public void openBackPage(){
 //        Intent intent = new Intent(this, backworkout.class);

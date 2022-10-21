@@ -30,9 +30,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginStart="120dp"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="110dp"
         android:layout_marginTop="180dp"
         android:text="Workout Categories"
         android:textColor="@color/white"
@@ -46,24 +46,22 @@
         android:layout_marginTop="220dp"
         android:layout_marginBottom="110dp">
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
 
             <ImageButton
-                android:id="@+id/chest"
+                android:id="@+id/chestBtn"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
                 android:background="@drawable/chest1" />
 
             <Space
@@ -73,8 +71,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="145dp"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:text="Chest workout"
                 android:textColor="@color/white"
                 android:textSize="20dp"
@@ -82,86 +79,74 @@
 
 
             <ImageButton
-                android:id="@+id/back"
+                android:id="@+id/backBtn"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
                 android:background="@drawable/back1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:text="Back workout"
                 android:textColor="@color/white"
+                android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/legs"
+                android:id="@+id/legsBtn"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
                 android:background="@drawable/legs1" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:text="Legs workout"
                 android:textColor="@color/white"
+                android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
             <ImageButton
-                android:id="@+id/arms"
+                android:id="@+id/armsBtn"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
                 android:background="@drawable/arm1" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="150dp"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:text="Arms workout"
                 android:textColor="@color/white"
+                android:layout_marginTop="20dp"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+
 
             <ImageButton
-                android:id="@+id/machine"
+                android:id="@+id/cardioBtn"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="38dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:scaleType="fitXY"
-                android:clickable="true"
-                android:background="@drawable/machines" />
+                android:background="@drawable/cardio" />
 
             <Space
                 android:layout_width="1dp"
@@ -170,9 +155,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:gravity="center"
-                android:text="Equipments and Facilities"
+                android:layout_gravity="center"
+                android:text="Cardio workout"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -186,7 +170,6 @@
                 android:textStyle="bold" />
 
             </LinearLayout>
-        </LinearLayout>
     </ScrollView>
 
     //this will be the button to navigate to each page
