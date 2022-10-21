@@ -18,19 +18,16 @@
         <entry key="..\:/FYP/app/src/main/res/layout/activity_gympage.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_homepage.xml" value="0.2" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_legequip.xml" value="0.176" />
-        <entry key="..\:/FYP/app/src/main/res/layout/activity_legsworkout.xml" value="0.264" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_legsworkout.xml" value="0.24010416666666667" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_membershippage.xml" value="0.190625" />
-        <entry key="..\:/FYP/app/src/main/res/layout/activity_paymentpage.xml" value="0.2" />
-        <entry key="..\:/FYP/app/src/main/res/layout/activity_paysuccessful.xml" value="0.2" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_plannerpage.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_planpage.xml" value="0.264" />
-        <entry key="..\:/FYP/app/src/main/res/layout/activity_qrpage.xml" value="0.264" />
+        <entry key="..\:/FYP/app/src/main/res/layout/activity_qrpage.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_shoppage.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_signup.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_userprofile.xml" value="0.24010416666666667" />
-        <entry key="..\:/FYP/app/src/main/res/layout/activity_view_workout_planner.xml" value="0.25416666666666665" />
         <entry key="..\:/FYP/app/src/main/res/layout/activity_workout_planner.xml" value="0.264" />
         <entry key="..\:/FYP/app/src/main/res/menu/menu.xml" value="0.264" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2585" />
@@ -38,13 +35,23 @@
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2585" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2585" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_armsequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_armsworkout.xml" value="0.2477355072463768" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_backequip.xml" value="0.25" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_backworkout.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_cardioequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_cardioworkout.xml" value="0.3145833333333333" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_chestequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_chestpage.xml" value="0.2642169728783902" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_chestworkout.xml" value="0.17" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_equipments.xml" value="0.22" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_gympage.xml" value="0.25" />
-        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_homepage.xml" value="0.1359375" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_homepage.xml" value="0.25" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_legequip.xml" value="0.2573749465583583" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_legsworkout.xml" value="0.25" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_login.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_main.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_paymentpage.xml" value="0.1" />
+        <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_paysuccessful.xml" value="0.33" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_planpage.xml" value="0.258230012825994" />
         <entry key="..\:/Users/ACER NITRO 5/Documents/GitHub/testingsaja/app/src/main/res/layout/activity_shoppage.xml" value="0.258230012825994" />
       </map>
