@@ -113,7 +113,7 @@ public class planpage extends AppCompatActivity {
     }
     //direct to workout planner
     public void openWorkoutPlanner(){
-        Intent intent = new Intent(this, workoutPlanner.class);
+        Intent intent = new Intent(this, viewWorkoutPlanner.class);
         startActivity(intent);
     }
     //direct to meal planner
