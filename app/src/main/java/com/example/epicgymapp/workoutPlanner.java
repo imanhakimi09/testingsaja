@@ -3,6 +3,7 @@ package com.example.epicgymapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -80,6 +81,13 @@ TextView textView;
 
                 reference.push().setValue(dataMap);
                 Toast.makeText(workoutPlanner.this, "New Workout plan added", Toast.LENGTH_SHORT).show();
+
+                //go to view Workout Planner
+                Intent intent = new Intent(workoutPlanner.this, viewWorkoutPlanner.class);
+                intent.putExtra("wkType", plan);
+                intent.putExtra("wkName", workoutType);
+                intent.putExtra("wkReps", reps);
+                startActivity(intent);
 
 //                getPlan(); //function to retrieve from database
             }
