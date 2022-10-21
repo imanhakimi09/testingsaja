@@ -19,9 +19,6 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="10dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,6 +32,7 @@
             android:orientation="vertical">
 
 
+            <!--  pic 1-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,194 +44,283 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/squat"
+            <ImageView
+                android:id="@+id/legsimg"
                 android:layout_width="350dp"
-                android:layout_height="260dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/squat" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
 
             <TextView
+                android:id="@+id/legsdesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:gravity="center_vertical"
                 android:text="The Smith machine squat is a variation of the squat and an exercise used to build the muscles of the legs"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/legstarget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+
+            <!--  pic 2-->
+            <ImageView
+                android:id="@+id/legstargetimg"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/legsimg3"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="2. Standing Calf Raise Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/standingcalf"
+            <ImageView
+                android:id="@+id/legsimg2"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/standingcalf" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/legsdesc2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:text="A device designed to target the calf muscle of the legs in standing form. "
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/legstarget2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/legstargetimg2"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/legsimg4">
+            </ImageView>
+
+
+            <!--  pic 3-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="3. Seated Calf Raise Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/seatedcalf"
+            <ImageView
+                android:id="@+id/legsimg3"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/seatedcalf" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/legsdesc3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_gravity="center"
                 android:text="A device designed to target the calf muscle of the legs in seated form."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/legstarget3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/legstargetimg3"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/legsimg4">
+            </ImageView>
+
+
+
+            <!--  pic 4-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="4. Leg Extension Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/legextension"
+            <ImageView
+                android:id="@+id/legsimg4"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/legextension" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/legsdesc4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
                 android:text="A machine that requires to straighten your leg against resistance and thus works the muscles on the front of the leg -- your quadriceps."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/legstarget4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/legstargetimg4"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/legsimg">
+            </ImageView>
+
+
+
+            <!--  pic 5-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="5. Leg Curl Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/legcurl"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/legcurl" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
                 android:text="The hamstring curl, also called a leg curl, is an exercise that strengthens the hamstrings ( back of the leg )."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/legstarget5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/legstargetimg5"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/legsimg2">
+            </ImageView>
 
 
         </LinearLayout>

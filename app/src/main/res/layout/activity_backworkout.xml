@@ -19,9 +19,6 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="10dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,6 +32,7 @@
             android:orientation="vertical">
 
 
+            <!--  pic 1-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,198 +44,290 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/lat"
+            <ImageView
+                android:id="@+id/backimg"
                 android:layout_width="350dp"
-                android:layout_height="260dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/lat" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/backdesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
                 android:text="A device designed for compound exercise, specifically meant to both develop and then stress the lat muscle."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/backtarget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/backtargetimg"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backimg">
+            </ImageView>
+
+
+
+            <!--  pic 2-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="2. Plate Lat Pulldown Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/platelat"
+            <ImageView
+                android:id="@+id/backimg2"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/platelat" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/backdesc2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
                 android:text="A device designed for isolation exercise, specifically meant to both develop and then stress the lat muscle."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/backtarget2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/backtargetimg2"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backimg">
+            </ImageView>
+
+
+
+            <!--  pic 3-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="3. Seated Row Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/seatedrow"
+            <ImageView
+                android:id="@+id/backimg3"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/seatedrow" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/backdesc3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
                 android:text="An all-around compound machine exercise for developing the middle back while offering useful arm work as well."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/backtarget3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/backtargetimg3"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backimg2">
+            </ImageView>
+
+
+
+            <!--  pic 4-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="4. Plate Row Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/platerow"
+            <ImageView
+                android:id="@+id/backimg4"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/platerow" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/backdesc4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
                 android:text="An all-around isolation machine exercise for developing the middle back while offering useful arm work as well."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/backtarget4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/backtargetimg4"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backimg2">
+            </ImageView>
+
+
+
+            <!--  pic 5-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="5. Reverse Seated Fly Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/fly"
+            <ImageView
+                android:id="@+id/backimg5"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/fly" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/backdesc5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
                 android:text="A machine designed to duplicate the reverse dumbbell fly exercise in machine form with comfort, complete safety and control."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/backtarget5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/backtargetimg5"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/backimg3">
+            </ImageView>
 
         </LinearLayout>
-
 
     </ScrollView>
 </RelativeLayout>

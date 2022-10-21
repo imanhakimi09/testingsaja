@@ -19,9 +19,6 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <Space
-        android:layout_width="1dp"
-        android:layout_height="10dp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,7 +31,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <!--  pic 1-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,156 +43,227 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/lat"
+            <ImageView
+                android:id="@+id/armsimg"
                 android:layout_width="350dp"
-                android:layout_height="260dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/bicepcurl" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/armsdesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
-                android:text="A device designed for an isolation exercise for the biceps muscles in the upper arm"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="A device designed for an isolation exercise for the biceps muscles in the upper arm."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/armstarget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/armstargetimg"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/armsimg3">
+            </ImageView>
+
+
+
+            <!--  pic 2-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="2. Shoudler Press Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/shoulderpress"
+            <ImageView
+                android:id="@+id/armsimg2"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/shoulderpress" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/armsdesc2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
-                android:text="A device designed for a variation of the seated barbell shoulder press used to strengthen the muscles of the shoulders"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="A device designed for a variation of the seated barbell shoulder press used to strengthen the muscles of the shoulders."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/armstarget2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/armstargetimg2"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/armsimg2">
+            </ImageView>
+
+
+
+            <!--  pic 3-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="3. Shoulder Lateral Raise Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/shoulderraise"
+            <ImageView
+                android:id="@+id/armsimg3"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/shoulderraise" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/armsdesc3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
-                android:text="A machine of varioations to do dumbell raise used to strengthen the side of the shoulders."
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_vertical"
+                android:text="A machine of variations to do dumbell raise used to strengthen the side of the shoulders."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/armstarget3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:id="@+id/armstargetimg3"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/armsimg4">
+            </ImageView>
+
+
+
+            <!--  pic 4-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginEnd="30dp"
                 android:text="4. Tricep Rope Pushdown Machine"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/tripushdown"
+            <ImageView
+                android:id="@+id/armsimg4"
                 android:layout_width="350dp"
-                android:layout_height="236dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginEnd="35dp"
-                android:gravity="center"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/tripushdown" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="5dp" />
-
             <TextView
+                android:id="@+id/armsdesc4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_vertical"
                 android:text="It is designed for effective isolation exercise which builds muscle and strength in all three tricep heads."
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <Space
-                android:layout_width="1dp"
-                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/armstarget4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
 
-
+            <ImageView
+                android:id="@+id/armstargetimg4"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/armsimg">
+            </ImageView>
 
         </LinearLayout>
 
