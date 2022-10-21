@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".chestpage">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="Chest Equipments"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- pic 1 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                android:text="1. Incline Chest Fly Machine"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chestimg"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/incline1">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/chestdesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="A device designed to duplicate the dumbbell fly exercise in an inclined machine form with comfort, complete safety and control."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chesttarget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chesttargetimg"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/chestimg">
+            </ImageView>
+
+
+            <!-- pic 2-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="30dp"
+                android:text="2. Seated Chest Fly Machine"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chestimg2"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/fly">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/chestdesc2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="A device designed to duplicate the dumbbell fly exercise in machine form with comfort, complete safety and control."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chesttarget2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chesttargetimg2"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/chestimg2">
+            </ImageView>
+
+
+            <!-- pic 3-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="30dp"
+                android:text="3. Chest Press Machine"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chestimg3"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/press">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/chestdesc3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="A machine exercise that primarily targets the chest and to a lesser degree also targets the shoulders and triceps"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chesttarget3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chesttargetimg3"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/chestimg">
+            </ImageView>
+
+
+            <!-- pic 4-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="30dp"
+                android:text="4. Smith Chest Machine"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chestimg4"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/smith">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/chestdesc4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="The smith machine bench press is a safe and secure way to progress and allow better control."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chesttarget4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chesttargetimg4"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/chestimg2">
+            </ImageView>
+
+
+            <!-- pic 5 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="30dp"
+                android:text="5. Cable Chest Fly Machine"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chestimg5"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/crossover">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/chestdesc5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text="A variation of the chest fly and an exercise used to strengthen the pushing muscles of the body."
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chesttarget5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+                android:text="Target muscle : "
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_below="@+id/chestimg"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/chesttargetimg5"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/chestimg2">
+            </ImageView>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
