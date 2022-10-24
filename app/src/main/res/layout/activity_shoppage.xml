@@ -38,16 +38,57 @@
         android:layout_marginLeft="40dp"
         android:text="Welcome!" />
 
+    <ImageButton
+        android:id="@+id/apparels"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/wrkoutplan"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/apparelsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apparels"
+        android:layout_centerHorizontal="true"
+        android:text="Apparels"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/supplements"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/apparelsText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/eatplan"
+        android:padding="20dp" />
+    <TextView
+        android:id="@+id/supplementsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supplements"
+        android:textSize="15dp"
+        android:layout_below="@id/supplements"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white" />
+
     <Button
         android:id="@+id/paymentBtn"
-        android:layout_width="match_parent"
+        android:layout_below="@+id/supplementsText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="555dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="10dp"
-        android:padding="18dp"
         android:text="payment page" />
 
     //this will be the button to navigate to each page
