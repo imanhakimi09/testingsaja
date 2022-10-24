@@ -73,15 +73,16 @@
         android:layout_marginBottom="5dp"
         android:background="@drawable/eatplan"
         android:padding="20dp" />
+
     <TextView
         android:id="@+id/supplementsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Supplements"
-        android:textSize="15dp"
         android:layout_below="@id/supplements"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/white" />
+        android:text="Supplements"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/paymentBtn"

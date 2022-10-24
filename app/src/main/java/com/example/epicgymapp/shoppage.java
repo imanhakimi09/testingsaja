@@ -36,12 +36,15 @@ public class shoppage extends AppCompatActivity {
     private DatabaseReference reference;
     private FirebaseUser user;
     private String userId;
+    private ImageButton apparels, supplements;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoppage);
 
+        apparels = (ImageButton) findViewById(R.id.apparels);
+        supplements = (ImageButton) findViewById(R.id.supplements);
         Button paymentBtn = (Button) findViewById(R.id.paymentBtn);
         textView2 = (TextView) findViewById(R.id.textView2);
 
@@ -65,6 +68,22 @@ public class shoppage extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(shoppage.this, "Failed to retrieve data!", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        apparels.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(shoppage.this, shopApparels.class);
+                startActivity(intent);
+            }
+        });
+
+        supplements.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(shoppage.this, shopSupplements.class);
+                startActivity(intent);
             }
         });
 

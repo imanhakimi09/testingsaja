@@ -38,4 +38,44 @@
         android:layout_marginLeft="40dp"
         android:text="Welcome!" />
 
+    <ImageButton
+        android:id="@+id/shirt1"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/wrkoutplan"
+        android:padding="20dp" />
+
+    <ImageButton
+        android:id="@+id/shirt2"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/shirt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/eatplan"
+        android:padding="20dp" />
+
+    <ImageButton
+        android:id="@+id/shirt3"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/shirt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/eatplan"
+        android:padding="20dp" />
+
+
 </RelativeLayout>
