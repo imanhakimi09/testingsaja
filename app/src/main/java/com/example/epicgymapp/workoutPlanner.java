@@ -28,7 +28,7 @@ public class workoutPlanner extends AppCompatActivity {
 private Button addWorkout, increment, decrement;
 private EditText workout;
 private TextView newPlan;
-private TextView repsValue, setsValue;
+private TextView repsValue, setsValue, backTextview;
 int count = 5;
 private DatabaseReference reference;
 
@@ -49,6 +49,15 @@ TextView textView;
         textInputLayout = findViewById(R.id.workoutMenu);
         autoCompleteTextView = findViewById(R.id.dropdownItems);
         textView = findViewById(R.id.newPlan);
+        backTextview = (TextView) findViewById(R.id.backTextview);
+
+        backTextview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(workoutPlanner.this, viewWorkoutPlanner.class);
+                startActivity(intent);
+            }
+        });
 
         String [] items = {"Back Workout", "Chest Workout", "Bicep Workout", "Tricep Workout", "Leg Workout"};
         ArrayAdapter<String> itemAdapter = new ArrayAdapter<>(workoutPlanner.this, R.layout.item_list, items);

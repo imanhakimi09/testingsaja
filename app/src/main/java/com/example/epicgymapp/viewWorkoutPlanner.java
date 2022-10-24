@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class viewWorkoutPlanner extends AppCompatActivity {
     private Button newWKBtn;
-    private TextView wkTypeTextview, wkNameTextview, RepsTextview;
+    private TextView wkTypeTextview, wkNameTextview, RepsTextview, backTextview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,15 @@ public class viewWorkoutPlanner extends AppCompatActivity {
         TextView wkNameTextview = (TextView)findViewById(R.id.wkNameTextview);
         TextView RepsTextview = (TextView)findViewById(R.id.RepsTextview);
         Button newWkBtn = (Button) findViewById(R.id.newWkBtn);
+        backTextview = (TextView) findViewById(R.id.backTextview);
 
+        backTextview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(viewWorkoutPlanner.this, planpage.class);
+                startActivity(intent);
+            }
+        });
         //retrieve from workout planner
         String plan = getIntent().getStringExtra("wkType");
         String workoutType = getIntent().getStringExtra("wkName");
