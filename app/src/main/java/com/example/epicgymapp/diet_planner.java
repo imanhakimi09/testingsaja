@@ -28,6 +28,7 @@ public class diet_planner extends AppCompatActivity{
     private Button textview;
     private EditText editText;
     int noteID;
+    private TextView backTextview;
 
 
     @Override
@@ -36,7 +37,15 @@ public class diet_planner extends AppCompatActivity{
         setContentView(R.layout.activity_diet_planner);
         reference = FirebaseDatabase.getInstance().getReference("DietPlan");
         textview = (Button) findViewById(R.id.textView);
-//        editText = (EditText) findViewById(R.id.editText);
+        backTextview = (TextView) findViewById(R.id.backTextview);
+
+        backTextview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(diet_planner.this, diet_planner1.class);
+                startActivity(intent);
+            }
+        });
 
         //add plan to database button
         textview.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +67,7 @@ public class diet_planner extends AppCompatActivity{
 //                Toast.makeText(diet_planner.this, "New Diet plan added", Toast.LENGTH_SHORT).show();
 
                 openDietPlan1();
+                Toast.makeText(diet_planner.this, "New plan has been added", Toast.LENGTH_LONG).show();
             }
         });
         EditText editText = (EditText)findViewById(R.id.editText);

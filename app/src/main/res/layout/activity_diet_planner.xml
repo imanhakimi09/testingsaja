@@ -8,24 +8,16 @@
     tools:context=".homepage">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/backTextview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Back"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:drawablePadding="5dp"
         android:textColor="@color/white"
-        android:textSize="15dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="40dp"
-        android:text="Hello username," />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="15dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginLeft="40dp"
-        android:text="Welcome!" />
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/textView"

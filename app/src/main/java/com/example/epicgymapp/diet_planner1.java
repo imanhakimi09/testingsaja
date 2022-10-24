@@ -16,12 +16,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class diet_planner1 extends AppCompatActivity {
     static ArrayList<String> notes = new ArrayList<String>();
     static ArrayAdapter<String> arrayAdapter;
+    private TextView backTextview;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
@@ -53,6 +55,15 @@ public class diet_planner1 extends AppCompatActivity {
         setContentView(R.layout.activity_diet_planner1);
         Button addPlan = (Button) findViewById(R.id.addPlan);
         ListView listView = (ListView)findViewById(R.id.listView);
+        backTextview = (TextView) findViewById(R.id.backTextview);
+
+        backTextview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(diet_planner1.this, planpage.class);
+                startActivity(intent);
+            }
+        });
 
         addPlan.setOnClickListener(new View.OnClickListener() {
             @Override
