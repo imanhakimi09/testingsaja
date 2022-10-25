@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="120dp"
-        android:text="Booking Page"
+        android:text="Select Your Trainer"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -30,29 +30,153 @@
         android:textColor="@color/white"
         android:textSize="15dp" />
 
-    <ImageButton
-        android:id="@+id/trainer1"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/wrkoutplan"
-        android:padding="20dp" />
+    <LinearLayout
+        android:id="@+id/firsttrainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:gravity="center">
 
-    <ImageButton
-        android:id="@+id/trainer2"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/trainer1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="5dp"
-        android:background="@drawable/eatplan"
-        android:padding="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:paddingLeft="15dp"
+            android:padding="5dp"
+            android:text="Trainer 1"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5sp" />
+
+        <Button
+            android:id="@+id/trainer1"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="Book" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondtrainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firsttrainer"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:text="Trainer 2"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5sp" />
+
+        <Button
+            android:id="@+id/trainer2"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="15dp"
+
+            android:text="Book" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdtrainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondtrainer"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/teal_200"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:text="Trainer 3"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5sp" />
+
+        <Button
+            android:id="@+id/trainer3"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="Book" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdtrainer"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:text="Trainer 4"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="5sp" />
+
+        <Button
+            android:id="@+id/trainer4"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="Book" />
+    </LinearLayout>
 </RelativeLayout>
