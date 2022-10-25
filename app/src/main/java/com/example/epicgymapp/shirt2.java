@@ -2,6 +2,7 @@ package com.example.epicgymapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 public class shirt2 extends AppCompatActivity {
     int quantity = 0;
-    private Button submitorder2;
+    private Button submitorder2, ConfirmBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +20,15 @@ public class shirt2 extends AppCompatActivity {
         setContentView(R.layout.activity_shirt2);
 
         submitorder2 = (Button) findViewById(R.id.orderBtn);
+        ConfirmBtn = (Button) findViewById(R.id.ConfirmBtn);
 
-
+        ConfirmBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(shirt2.this, paymentpage.class);
+                startActivity(intent);
+            }
+        });
         submitorder2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
