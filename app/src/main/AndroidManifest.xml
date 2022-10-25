@@ -16,6 +16,18 @@
         android:theme="@style/Theme.EpicGymApp"
         tools:targetApi="31">
         <activity
+            android:name=".addToCart"
+            android:exported="false" />
+        <activity
+            android:name=".shirt3"
+            android:exported="false" />
+        <activity
+            android:name=".shirt2"
+            android:exported="false" />
+        <activity
+            android:name=".shirt1"
+            android:exported="false" />
+        <activity
             android:name=".bookingpage"
             android:exported="false" />
         <activity

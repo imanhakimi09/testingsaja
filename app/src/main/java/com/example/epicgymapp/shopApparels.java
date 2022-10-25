@@ -35,7 +35,7 @@ public class shopApparels extends AppCompatActivity {
         shirt1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(shopApparels.this, shoppage.class);
+                Intent intent = new Intent(shopApparels.this, shirt1.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +43,7 @@ public class shopApparels extends AppCompatActivity {
         shirt2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(shopApparels.this, shoppage.class);
+                Intent intent = new Intent(shopApparels.this, shirt2.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class shopApparels extends AppCompatActivity {
         shirt3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(shopApparels.this, shoppage.class);
+                Intent intent = new Intent(shopApparels.this, shirt3.class);
                 startActivity(intent);
             }
         });
