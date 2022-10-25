@@ -16,6 +16,9 @@
         android:theme="@style/Theme.EpicGymApp"
         tools:targetApi="31">
         <activity
+            android:name=".bookingpage"
+            android:exported="false" />
+        <activity
             android:name=".shopSupplements"
             android:exported="false" />
         <activity

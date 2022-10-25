@@ -40,7 +40,7 @@
 
 
     <ImageButton
-        android:id="@+id/scanBtn"
+        android:id="@+id/bookBtn"
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_below="@id/scanBtns"
@@ -55,7 +55,7 @@
         android:id="@+id/trainerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/scanBtn"
+        android:layout_below="@id/bookBtn"
         android:layout_centerHorizontal="true"
         android:text="Book Personal Trainer"
         android:textColor="@color/white"

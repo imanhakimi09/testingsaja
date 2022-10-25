@@ -36,6 +36,7 @@ public class qrpage extends AppCompatActivity {
     private FirebaseUser user;
     private String userId;
     private TextView textView2;
+    private ImageButton bookBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +48,7 @@ public class qrpage extends AppCompatActivity {
         attendance = (TextView) findViewById(R.id.attendance);
         timerTextview = (TextView) findViewById(R.id.timerTextview);
         textView2 = (TextView) findViewById(R.id.textView2);
+        bookBtn = (ImageButton) findViewById(R.id.bookBtn);
 
         //retrieve data
         user = FirebaseAuth.getInstance().getCurrentUser();
@@ -68,6 +70,15 @@ public class qrpage extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(qrpage.this, "Failed to retrieve data!", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        //navigate to book trainer
+        bookBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(qrpage.this, bookingpage.class);
+                startActivity(intent);
             }
         });
 
