@@ -10,9 +10,19 @@ import android.widget.CheckBox;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import org.w3c.dom.Text;
+
+import java.util.HashMap;
+
 public class shirt3 extends AppCompatActivity {
     int quantity = 0;
     private Button submitorder3, ConfirmBtn;
+    private DatabaseReference reference;
+    private CheckBox small_checkbox, medium_checkbox, large_checkbox;
+    private TextView shirtTextview, quantity_text_view, Order_summary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +30,31 @@ public class shirt3 extends AppCompatActivity {
         setContentView(R.layout.activity_shirt3);
         submitorder3 = (Button) findViewById(R.id.orderBtn);
         ConfirmBtn = (Button) findViewById(R.id.ConfirmBtn);
+        quantity_text_view = (TextView) findViewById(R.id.quantity_text_view);
+        Order_summary = (TextView) findViewById(R.id.Order_summary);
+        shirtTextview = (TextView) findViewById(R.id.shirtTextview);
+        small_checkbox = (CheckBox) findViewById(R.id.small_checkbox);
+        medium_checkbox = (CheckBox) findViewById(R.id.medium_checkbox);
+        large_checkbox = (CheckBox) findViewById(R.id.large_checkbox);
+        reference = FirebaseDatabase.getInstance().getReference("Shopping");
 
         ConfirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String shirt3 = shirtTextview.getText().toString();
+                String quantity = quantity_text_view.getText().toString();
+                String small = small_checkbox.getText().toString();
+                String medium = medium_checkbox.getText().toString();
+                String large = large_checkbox.getText().toString();
+                String order = Order_summary.getText().toString();
+
+                HashMap<String, String > dataMap = new HashMap<String, String>();
+                dataMap.put("Item", shirt3);
+                dataMap.put("Item details", order);
+
+                reference.push().setValue(dataMap);
+                //reference.child("Apparels").setValue("shirt3");
                 Intent intent = new Intent(shirt3.this, paymentpage.class);
                 startActivity(intent);
             }
