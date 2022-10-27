@@ -22,7 +22,7 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class membershippage extends AppCompatActivity {
-    private TextView membershipText;
+    private TextView membershipText, backTextview;
     private Button oneMonthMembership, threeMonthMembership, oneYearMembership;
     private DatabaseReference reference;
 
@@ -36,6 +36,15 @@ public class membershippage extends AppCompatActivity {
         threeMonthMembership = (Button) findViewById(R.id.threeMonthMembership);
         oneYearMembership = (Button) findViewById(R.id.oneYearMembership);
         reference = FirebaseDatabase.getInstance().getReference("Membership");
+        backTextview = (TextView) findViewById(R.id.backTextview);
+
+        backTextview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(membershippage.this, userprofile.class);
+                startActivity(intent);
+            }
+        });
 
         membershipText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +85,8 @@ public class membershippage extends AppCompatActivity {
                         membershipText.setText("Your membership is valid for 1 Month");
                         Toast.makeText(membershippage.this, "Registered successful", Toast.LENGTH_LONG).show();
                         reference.child("Membership Status").setValue("One Month");
+                        Intent intent = new Intent(membershippage.this, paymentpage.class);
+                        startActivity(intent);
 
                         //timer
                         long duration = TimeUnit.MINUTES.toMillis(1);
@@ -122,6 +133,8 @@ public class membershippage extends AppCompatActivity {
                         membershipText.setText("Your membership is valid for 3 Months");
                         Toast.makeText(membershippage.this, "Registered successful", Toast.LENGTH_LONG).show();
                         reference.child("Membership Status").setValue("Three Month");
+                        Intent intent = new Intent(membershippage.this, paymentpage.class);
+                        startActivity(intent);
 
                         //timer
                         long duration = TimeUnit.MINUTES.toMillis(1);
@@ -168,6 +181,8 @@ public class membershippage extends AppCompatActivity {
                         membershipText.setText("Your membership is valid for 1 Year");
                         Toast.makeText(membershippage.this, "Registered successful", Toast.LENGTH_LONG).show();
                         reference.child("Membership Status").setValue("One Year");
+                        Intent intent = new Intent(membershippage.this, paymentpage.class);
+                        startActivity(intent);
 
                         //timer
                         long duration = TimeUnit.MINUTES.toMillis(1);
