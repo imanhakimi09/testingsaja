@@ -83,14 +83,14 @@ public class supplements3 extends AppCompatActivity {
     }
 
     private int calculatePrice(boolean addSmall1, boolean addLarge1) {
-        int basePrice = 9;
+        int basePrice = 40;
 
         if (addSmall1) {
             basePrice = basePrice + 0;
         }
 
         if (addLarge1)
-            basePrice = basePrice + 0;
+            basePrice = basePrice + 30;
 
 
         return quantity * basePrice;

@@ -36,12 +36,12 @@
         android:layout_width="150dp"
         android:layout_height="160dp"
         android:layout_below="@id/textView"
-        android:layout_marginLeft="220dp"
         android:layout_marginStart="30dp"
+        android:layout_marginLeft="220dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/wrkoutplan"
+        android:background="@drawable/tank1"
         android:padding="20dp" />
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_marginLeft="200dp"
         android:layout_marginTop="180dp"
         android:textSize="20dp"
-        android:text="Black "
+        android:text="Black Gym shirt "
         android:textColor="@color/black"
         />
 
@@ -68,12 +68,12 @@
         android:layout_width="150dp"
         android:layout_height="160dp"
         android:layout_below="@id/textView"
-        android:layout_marginLeft="220dp"
         android:layout_marginStart="30dp"
+        android:layout_marginLeft="220dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/wrkoutplan"
+        android:background="@drawable/tank2"
         android:padding="20dp" />
 
     <TextView
@@ -81,10 +81,9 @@
         android:layout_height="72dp"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="350dp"
-        android:textSize="20dp"
-        android:text="Black "
+        android:text="Blue Gym Shirt "
         android:textColor="@color/black"
-        />
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/shirt2Button"
@@ -105,7 +104,7 @@
         android:layout_marginTop="380dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/wrkoutplan"
+        android:background="@drawable/tank3"
         android:padding="20dp" />
 
     <TextView
@@ -113,10 +112,9 @@
         android:layout_height="72dp"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="530dp"
-        android:textSize="20dp"
-        android:text="Black "
+        android:text="Grey Gym shirt "
         android:textColor="@color/black"
-        />
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/shirt3Button"

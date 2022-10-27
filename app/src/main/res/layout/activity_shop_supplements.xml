@@ -30,42 +30,98 @@
         android:textColor="@color/white"
         android:textSize="15dp" />
 
-    <ImageButton
+
+    <ImageView
         android:id="@+id/medicine1"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
         android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
+        android:layout_marginLeft="220dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/wrkoutplan"
+        android:background="@drawable/proteinwhey"
         android:padding="20dp" />
 
-    <ImageButton
+    <TextView
+        android:layout_width="122dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="180dp"
+        android:textSize="20dp"
+        android:text="Whey Protein"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/medicine1Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="250dp"
+        android:text="MORE"
+        android:textSize="16sp" />
+
+    <ImageView
         android:id="@+id/medicine2"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/medicine1"
-        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/textView"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/eatplan"
+        android:background="@drawable/preworkout"
         android:padding="20dp" />
 
-    <ImageButton
+    <TextView
+        android:layout_width="122dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="350dp"
+        android:text="Pre-Workout "
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/medicine2Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="420dp"
+        android:text="MORE"
+        android:textSize="16sp"/>
+
+    <ImageView
         android:id="@+id/medicine3"
-        android:layout_width="300dp"
-        android:layout_height="150dp"
-        android:layout_below="@id/medicine2"
-        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/textView"
+        android:layout_marginLeft="220dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="380dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/eatplan"
+        android:background="@drawable/massgainer"
         android:padding="20dp" />
+
+    <TextView
+        android:layout_width="122dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="530dp"
+        android:text="Mass Gainer "
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/medicine3Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="600dp"
+        android:text="MORE"
+        android:textSize="16sp"/>
 </RelativeLayout>

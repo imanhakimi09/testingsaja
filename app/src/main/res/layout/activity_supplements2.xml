@@ -33,7 +33,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DECRIPTION:"
+                android:text="DESCRIPTION:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A powdered form of energy to enhance performance."
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
@@ -41,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Price: $ 9. 00"
+                android:text="Price: $ 30. 00"
                 android:textSize="20dp"/>
 
             <CheckBox
@@ -56,8 +62,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="200dp"
-                android:text="LARGE"
-                android:textSize="24sp"
+                android:text="LARGE + $20"
+                android:textSize="20dp"
                 android:id="@+id/large_checkbox"/>
 
             <TextView

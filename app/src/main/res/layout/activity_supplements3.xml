@@ -33,7 +33,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DECRIPTION:"
+                android:text="DESCRIPTION:"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supplement that provides protein, carbohydrates and possibly fats with the intention of helping to add muscle mass. It is a high-calorie protein powder aimed at increasing your daily calorie intake to promote weight gain"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
@@ -41,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Price: $ 9. 00"
+                android:text="Price: $ 40. 00"
                 android:textSize="20dp"/>
 
             <CheckBox
@@ -56,8 +62,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="200dp"
-                android:text="LARGE"
-                android:textSize="24sp"
+                android:text="LARGE + $30"
+                android:textSize="20dp"
                 android:id="@+id/large_checkbox"/>
 
             <TextView

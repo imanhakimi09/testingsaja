@@ -28,12 +28,18 @@
             <ImageView
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:src="@drawable/background3" />
+                android:src="@drawable/tank2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DECRIPTION:"
+                android:text="DESCRIPTION"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue Dry-fit Tshirt, Strechable material"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 

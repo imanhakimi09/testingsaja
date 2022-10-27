@@ -48,7 +48,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/wrkoutplan"
+        android:background="@drawable/barang"
         android:padding="20dp" />
 
     <TextView
@@ -71,7 +71,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="5dp"
-        android:background="@drawable/eatplan"
+        android:background="@drawable/ubat"
         android:padding="20dp" />
 
     <TextView

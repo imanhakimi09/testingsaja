@@ -25,7 +25,6 @@ public class paymentpage extends AppCompatActivity {
     private EditText expDate;
     private EditText cardCvv;
     private EditText postalCode;
-    private EditText phoneNumber;
     private EditText amount;
     private Button payBtn;
     private DatabaseReference reference;
@@ -43,7 +42,6 @@ public class paymentpage extends AppCompatActivity {
         expDate = (EditText) findViewById(R.id.expDate);
         cardCvv = (EditText) findViewById(R.id.cardCvv);
         postalCode = (EditText) findViewById(R.id.postalCode);
-        phoneNumber = (EditText) findViewById(R.id.phoneNum);
         amount = (EditText) findViewById(R.id.amount);
         payBtn = (Button)findViewById((R.id.payBtn));
 
@@ -56,7 +54,6 @@ public class paymentpage extends AppCompatActivity {
                 String expiryDate = expDate.getText().toString();
                 String cvv = cardCvv.getText().toString();
                 String pCode = postalCode.getText().toString();
-                String phone = phoneNumber.getText().toString();
                 String amt = amount.getText().toString();
 
                 if (cardnum.isEmpty()){
@@ -106,17 +103,6 @@ public class paymentpage extends AppCompatActivity {
                     return;
                 }
 
-                //phone
-                if (phone.isEmpty()){
-                    phoneNumber.setError("Phone number is required");
-                    phoneNumber.requestFocus();
-                    return;
-                }
-                if (phone.length() > 7){
-                    phoneNumber.setError("Phone number must be 7 digits");
-                    phoneNumber.requestFocus();
-                    return;
-                }
 
                 //amount to be paid
                 if (amt.isEmpty()){
@@ -140,7 +126,6 @@ public class paymentpage extends AppCompatActivity {
                         dataMap.put("Expiry Date", expiryDate);
                         dataMap.put("CVV", cvv);
                         dataMap.put("Postal Code", pCode);
-                        dataMap.put("Phone No", phone);
                         dataMap.put("Amount", amt);
 
                         reference.push().setValue(dataMap);
