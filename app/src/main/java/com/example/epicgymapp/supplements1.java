@@ -34,6 +34,7 @@ public class supplements1 extends AppCompatActivity {
         large_checkbox = (CheckBox) findViewById(R.id.large_checkbox);
         reference = FirebaseDatabase.getInstance().getReference("Shopping");
 
+        //add to database
         ConfirmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
